@@ -25,7 +25,7 @@
         margin: 20px;
     }
 :content: 
-	<p>
+    <p>
         <img src="/static/images/toddsifleet.jpg" class = "portrait">I am Todd Sifleet I grew up in the Boston area, then went to Union College in upstate NY and graduate school at Georgia Tech in Atlanta.  I enjoy solving challenging problems by utilizing bleeding edge technology and software solutions. 
     </p>
     <p>

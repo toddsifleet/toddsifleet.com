@@ -5,19 +5,19 @@
 :order: 2
 
 :meta-description:
-	A summary of some of the projects I have worked on: tabswithme, naive bayes classifier, project euler, and automatic pike transmission.
+    A summary of some of the projects I have worked on: tabswithme, naive bayes classifier, project euler, and automatic pike transmission.
 
 :meta-keywords:
-	python, arduino, javascript, software, css, html
+    python, arduino, javascript, software, css, html
 :styles:
-	.entry-title {
-		margin:0px; 
-		padding:0px;
-		border-bottom: 1px dotted #aaa;
-	}
+    .entry-title {
+        margin:0px; 
+        padding:0px;
+        border-bottom: 1px dotted #aaa;
+    }
 
-	.entry {
-		margin-bottom: 25px;
-	}
+    .entry {
+        margin-bottom: 25px;
+    }
 :content:
-	These are some of the projects that I have built over the course of time, mostly they are things I did out of curiosity or to solve a personal need.  For the most part they revolve around python, arduino and the web, to view more of my work visit my <a href="http://www.github.com/toddsifleet" targe= "_blank">github profile</a>.
+    These are some of the projects that I have built over the course of time, mostly they are things I did out of curiosity or to solve a personal need.  For the most part they revolve around python, arduino and the web, to view more of my work visit my <a href="http://www.github.com/toddsifleet" targe= "_blank">github profile</a>.

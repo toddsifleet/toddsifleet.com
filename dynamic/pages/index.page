@@ -6,82 +6,82 @@
 :order: 1
 
 :meta-description:
-	Todd Sifleet, a software engineer specializing in python and web development.  I enjoy using technology to solve challenging business problems.
+    Todd Sifleet, a software engineer specializing in python and web development.  I enjoy using technology to solve challenging business problems.
 
 :meta-keywords:
-	software, engineer, python, javascript, css, html, arduino, appengine, django, tabswithme
+    software, engineer, python, javascript, css, html, arduino, appengine, django, tabswithme
 
 :styles:
-	#hero {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		text-align:justify;
-		float: left;
-	}
+    #hero {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align:justify;
+        float: left;
+    }
 
-	.skills {
-		float: left;
-		text-align: center;
-		margin-bottom: 25px;
-	}
+    .skills {
+        float: left;
+        text-align: center;
+        margin-bottom: 25px;
+    }
 
-	h2 {
-		margin:0px; 
-		padding:0px; 
-		border-bottom: 1px solid #aaa;
-		width: 100%;
-	}
+    h2 {
+        margin:0px; 
+        padding:0px; 
+        border-bottom: 1px solid #aaa;
+        width: 100%;
+    }
 
-	.project {
-		padding-top: 0px;
-		border: 3px dotted #205c90;
-		border-radius: 15px;
-	    -moz-border-radius: 15px; 
-	    -webkit-border-radius: 15px;
-	    margin-top: 25px;
-	}
+    .project {
+        padding-top: 0px;
+        border: 3px dotted #205c90;
+        border-radius: 15px;
+        -moz-border-radius: 15px; 
+        -webkit-border-radius: 15px;
+        margin-top: 25px;
+    }
 
-	.project p {
-		margin: 15px;
-	}
+    .project p {
+        margin: 15px;
+    }
 
-	.project h3 {
-		margin: 0px;
-		padding-left: 15px;
-		border-bottom: 3px dotted #205c90;
-	}
+    .project h3 {
+        margin: 0px;
+        padding-left: 15px;
+        border-bottom: 3px dotted #205c90;
+    }
 :content:
-	<div class="home_box" id = "hero"> 
-		I'm <strong>Todd Sifleet</strong>, a software engineer specializing in python and web development.  I  work with a myriad of technologies to solve challenging business problems.
-	</div>
-	
-	<h2><a href = "/skills">skills</a>:</h2>
-	<div class = "home_box skills">
-		python, perl, arduino, django, app engine, javascript, css, html, json/xml, databases
-	</div>
+    <div class="home_box" id = "hero"> 
+        I'm <strong>Todd Sifleet</strong>, a software engineer specializing in python and web development.  I  work with a myriad of technologies to solve challenging business problems.
+    </div>
+    
+    <h2><a href = "/skills">skills</a>:</h2>
+    <div class = "home_box skills">
+        python, perl, arduino, django, app engine, javascript, css, html, json/xml, databases
+    </div>
 
-	<h2><a href = "/projects">projects</a>:</h2> 
-	<div class = "project">
-		<h3><a href="https://github.com/toddsifleet/staticpy">Static Py</a></h3>
-		<p>
-			
-			<ul>
-				<li>Static website generator I built to create this website.  </li>
-				<li>Uses the <a href="http:http://jinja.pocoo.org/">jinja</a> templating engine.</li>
-				<li>Built in dev server, which auto refreshes pages on changes, no need to change windows to see changes.</li>
-				<li>Incredibly customizable, all you have to worry about is your templates, data, and styles, everything else is taken care of.</li>
-			</ul>
-		</p>
-	</div>
-	<div class = "project">
-		<h3><a href="http://www.tabswithme.com">Tabs With Me</a></h3>
-		<p> 
-			This is a website that I built to my roommates and I share our bills.  Whenever we pay a bill or pay a roommate we track it here, it is very clear who owes what.  I built this with python, appengine and bootstrap.
-		</p>  
-	</div>
-	<div class = "project">
-		<h3><a href="https://github.com/toddsifleet/sublime_open">Sublime Text Plugin</a></h3>
-		<p>
-			This is a plugin that makes navigating your files a breeze within <a href = "http://www.sublimetext.com">Sublime Text</a>.  Tracks recent files, favorite files/places allows you to navigate the file tree right from the keyboard.  Tracks different projects, so if you switch between branches it is easy to keep things separate.
-		</p>
-	</div>
+    <h2><a href = "/projects">projects</a>:</h2> 
+    <div class = "project">
+        <h3><a href="https://github.com/toddsifleet/staticpy">Static Py</a></h3>
+        <p>
+            
+            <ul>
+                <li>Static website generator I built to create this website.  </li>
+                <li>Uses the <a href="http:http://jinja.pocoo.org/">jinja</a> templating engine.</li>
+                <li>Built in dev server, which auto refreshes pages on changes, no need to change windows to see changes.</li>
+                <li>Incredibly customizable, all you have to worry about is your templates, data, and styles, everything else is taken care of.</li>
+            </ul>
+        </p>
+    </div>
+    <div class = "project">
+        <h3><a href="http://www.tabswithme.com">Tabs With Me</a></h3>
+        <p> 
+            This is a website that I built to my roommates and I share our bills.  Whenever we pay a bill or pay a roommate we track it here, it is very clear who owes what.  I built this with python, appengine and bootstrap.
+        </p>  
+    </div>
+    <div class = "project">
+        <h3><a href="https://github.com/toddsifleet/sublime_open">Sublime Text Plugin</a></h3>
+        <p>
+            This is a plugin that makes navigating your files a breeze within <a href = "http://www.sublimetext.com">Sublime Text</a>.  Tracks recent files, favorite files/places allows you to navigate the file tree right from the keyboard.  Tracks different projects, so if you switch between branches it is easy to keep things separate.
+        </p>
+    </div>
