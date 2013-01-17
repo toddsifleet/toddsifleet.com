@@ -1,0 +1,104 @@
+:html_title: Skills -- Todd Sifleet
+:title: skills
+:home_page: True
+:order: 3
+:heading: skills
+
+:meta-description:
+	A summary of my programming abilities, including: python, django, javascript, css, html, arduino, and C.
+
+:meta-keywords:
+	python, javascript, arduino, css, html, programming, software
+	
+:styles:
+	p {
+		margin-top: 0px;
+	}
+
+	.skill {
+		margin:0px; 
+		padding:0px;
+		border-bottom: 1px dotted #aaa;
+	}
+
+	h4 span {
+		font-size: .8em;
+	}
+
+	.proficient {
+		color: green;
+	}
+
+	.comfortable {
+		color: black;
+	}
+
+	.familiar {
+		color: orange;
+	}
+
+	.learning {
+		color: red;
+	}
+:content:
+	<h2>Languages</h2>
+	<a name="python"></a>
+	<h4 class = "skill">python:<span class = "proficient pull-right">PROFICIENT</span></h4>
+	<p>
+		I have written a lot of python including web sites, number crunching, command line utilities, machine learning.  Python is my favorite language to work in, I love it!
+	</p>
+
+	<a name="perl"></a>
+	<h4 class = "skill">perl: <span class = "proficient pull-right">PROFICIENT</span></h4>
+	<p>
+		I write a lot of perl code day to day.  Perl is my favorite language for anything text processing or quick sys-admin like scripts.  Currently I have been using Moose to bring some sanity to perl's object system. 
+	</p>
+
+	<a name="arduino"></a>
+	<h4 class = "skill">arduino: <span class = "proficient pull-right">PROFICIENT</span></h4>
+	<p>
+		If you aren't familiar with <a href = "//arduino.cc">arduino</a> I recommend you check it out.  It is a hardware/software platform that makes it really easy to start building things around a micro-controller.  It uses a combination of C and C++ coding for development. 
+	</p>
+
+	<a name="javascript"></a>
+	<h4 class = "skill">javascript <span class = "comfortable pull-right">COMFORTABLE</span></h4>
+	<p>
+		Javascript is something that I am working on getting better at.  It is incredibly powerful, I am currently working on improving my skills to take advantage of its more advanced features.
+	</p>	
+
+	<a name="css-html"></a>
+	<h4 class = "skill">css and html <span class = "comfortable pull-right">COMFORTABLE</span></h4>
+	<p>
+		I am by no means a design, but by using best practices and frameworks I can be effective.
+	</p>
+	
+	<a name="c"></a>
+	<h4 class = "skill">C: <span class = "familiar pull-right">FAMILIAR</span></h4>
+	<p>
+		I have been writing less and less C code since I left school, but I really like the power of C.  I use C with the arduino and occasionally write some C to speed up bottle necks in my python code. I would like to write more C.
+	</p>
+
+	<a name="haskell"></a>
+	<h4 class = "skill">haskell: <span class = "learning pull-right">LEARNING</span></h4>
+	<p>
+		I have been teaching myself haskell when I have time.  I think it is really cool, and I want to explore a strongly typed purely functional programming language.
+	</p>
+
+	<h2>Other Stuff</h2>
+	<a name="web"></a>
+	<h4 class = "skill">web development:</h4>
+	<p>
+		By combining python, js, html and css, I build some pretty cool stuff online.  Websites are my favorite way to build software, because it is so easy to get it out there while still being able to update it daily.
+	</p>
+
+	<a name="appengine"></a>
+	<h4 class = "skill">google appengine:</h4>
+	<p>
+		I have a lot of experience building websites on appengine.  It is the quickest way to get a django site up and running.  
+	</p>
+
+	<a name="database"></a>
+	<h4 class = "skill">databases:</h4>
+	<p>
+		I mostly work with standard relational databases (oracle, mysql, and postgres) but I am starting to work more with NoSQL solutions.
+	</p>

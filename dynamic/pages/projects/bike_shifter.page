@@ -1,0 +1,24 @@
+:html-title: Automatic Bike Transmission
+:title: auto bike shifter
+:heading: auto bike shifter
+:description: 
+	This is a project I completed at GT, we retrofitted a bicycle with actuators to shift through the gears and sensors to measure speed, pedal rate, and angle of inclination. A controller was then used to shift accordingly.
+
+:content:
+	<p> In <a href="http://www.me.gatech.edu/mechatronics_lab/">advanced mechatronics</a> at GT our semester project was based around the <a href="http://en.wikipedia.org/wiki/Freescale_68HC12">Motorola HC12</a> micro-controller, we decided to retrofitted a bicycle with actuators to shift through the gears and sensors to measure speed, pedal rate, and angle of inclination.  A controller was then used to shift accordingly. 
+	</p>
+	<center>
+	<iframe title="Automatic Bike Transmission" width="640" height="390"  align = "center" src="http://www.youtube.com/embed/Y_bgnpoR7CY" frameborder="0" allowfullscreen></iframe>  
+	</center>
+	<h3>Problem Statement</h3> 
+	<p>The goal of this project was to create an automatic transmission for a common bicycle. This system must shift the bicycle smoothly through the gears on the bicycle. In order to determine when to properly shift the bicycle, the transmission must incorporate input measurements of torque applied by the cyclist, pedaling rate, and bike speed. Also, a manual mode should be available so that the rider can have full control over gear shifting. An effective user interface must also be incorporated into the bicycle so that the rider can see his/her speed, current gear, and change between manual and automatic mode. The user interface also functions as an odometer that measures current speed, average speed, and distance traveled.</p> 
+	<h3>Functional Decomposition</h3> 
+	<p>At the beginning of the semester we formed a vision of what we were trying to create, this vision contained multiple features/functions:</p> 
+	<p><u>Mechanical Shifting:</u> The most fundamental function of the system is its ability to effectively shift from gear to gear.  From the beginning we felt that the standard bike derailleur system could be actuated by a high torque motor: stepper, servo, DC motor (high gear ratio).  Originally one of our main design goals was to have a self-locking system that required no energy to maintain its position. </p> 
+	<p><u>User Interface:</u> We saw the device being easily controlled by the rider, this includes a visual interface (LCD display) and buttons for user input. The bike would allow the rider to override the automatic controller and shift the gears manually.  Lastly since we were implementing an LCD display we wanted to utilize it to display relevant information: speed, average speed, and distance.</p> 
+	<p><u>Sensors:</u> In order to implement an intelligent controller it was important to measure real time data from the bicycle. This data is important for the controller to be able to measure the cyclist's riding effort. To accomplish this we decided to focus on measuring rider speed, rider acceleration, and angle of inclination.  </p> 
+	<p><u>Controller:</u> Our ultimate goal was to create a device that could intelligently shift a bicycle and create a more enjoyable riding experience. This required the implementation of an effective controller, which is a non-trivial task. We envisioned a controller that could sense how much effort the cyclist was exerting and would shift accordingly. Furthermore, by combining effort and pedal rate, we sought to create a consistent and effective controller. </p> 
+	<h3>Outcome</h3> 
+	<p>The specific goals of that objective were fulfilled with great success. The system was able to shift the bicycle smoothly through the gears of the bicycle using both a manual button-activated mode and an automatic mode that incorporated the pedaling rate, bike speed, and tilt. The user interface effectively provides the rider with a view of his/her speed, current gear, and distance traveled, and it also allowed an easy means of changing between manual and automatic and shifting while in manual mode. The controller used was effective in changing gears to accommodate the rider's needs. However, this controller has significant room for improvement as there are many factors involved in the system that were not able to be taken into account. The Automatic Bicycle Transmission exceeded the group expectations and is considered a great success.
+	<a href="http://www.me.gatech.edu/mechatronics_lab/Projects/Fall08/Group3/index.html">Read More</a>
+	</p> 

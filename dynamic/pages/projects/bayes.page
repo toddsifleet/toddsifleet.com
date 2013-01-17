@@ -1,0 +1,114 @@
+:html-title: Naive Bayes Classifier | Todd Sifleet
+:title: bayes classifier
+:heading: bayes classifier
+:order: 1
+
+:meta-description: 
+	A python implementation of a naive bayes classifier, for classifying text documents.
+
+:description: 
+	This is a python implementation of a <a href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier">naive bayes classifier</a>.  A bayes classifier is used to probabilistically classify items based on the presence or absence of features.
+
+:styles:
+	h3,h4, h5 {
+		border-bottom: 1px dotted #aaa;
+	}
+
+:content:
+	<h3>What is a Naive Bayes Classifier?</h3>
+	<p>
+		A <a href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier">naive bayes classifier</a> is used to classify items into different categories, based on the presence or absence of features.  Using the cumulative probability of each feature we are able to classify an unknown item. <b>In order for this to work we must train our classifier with known data.</b>
+	</p>
+
+	<h3>Note:</h3>
+	<p>
+		A critical assumption is <b>feature Independence</b>, this means that the presence of one feature is independent of another feature.  i.e. the fact that an apple is red is independent of the fact that it has seeds.  
+	</p>
+
+	<h3>Example Usage</h3>
+	<p>
+		A good example is a spam filter (they aren't this simple any more), a spam filter needs to classify an email as either spam or not spam.  A very simple break down of the classification process:
+			<ul>
+				<li><b>Parsing</b>: Split and count the individual words in the email we are trying to learn from or classify.</li>
+				<li><b>Learning</b>: Sample previously classified emails and count the words that show up in spam vs non-spam emails. (wiki: <a href = "http://en.wikipedia.org/wiki/Supervised_learning">supervised learning</a>)</li>
+				<li><b>Classifying</b>: Compare the frequency of spamy words vs non-spamy words, choose the more likely classification</li>
+			</ul>
+	</p>
+	
+	<h3>Implementation:</h3>
+	<p>
+		This isn't optimize for speed or anything like that, but it does a good job of outlining what is involved with the training and classification steps.  For the full code go to <a href="https://github.com/toddsifleet/bayes_classifier">github</a>.
+	</p>
+	<h4>Parsing</h4>
+		<ul>
+			<li>Split the document into individual words</li>
+			<li>Filter out words with less than 3 letters</li>
+			<li>Group and count duplicate words</li>
+		</ul>
+
+	<h4>Training</h4>
+		<ul>
+			<li>Parse the document into word counts</li>
+			<li>Update the category specific count for each word that appeared in the document. e.g. spam[viagra] = 20</li>
+			<li>Update how many words we have counted for the given category.</li>
+		</ul>
+	<pre class = "code">
+for data, category in docs:
+  words = self.get_words(data)
+  self.categories[category].update(words)
+  self.word_count[category] += sum(words.values())</pre>
+
+  <h4>Classifying</h4>
+  	<ul>
+  		<li>Parse the document into word counts</li>
+  		<li>Setup a counter for each possible classification in your classifier.</li>
+  		<li>Loop through each word in the document</li>
+  			<ul>
+  				<li>Loop through each category add the log(category.word / category.total) to your counter.  We use log to avoid underflows with very small numbers, (I'm not sure if it is overkill)</li>
+  			</ul>
+  		<li>Loop through each category and add log(word_count[category]/word_count[total]), to each each categories score.</li>
+  		<li>Return the category with the highest score</li>
+  	</ul>
+	<pre class = "code">
+words = self.get_words(string) #a counter of the words in the string
+score = defaultdict(float) #score for each category
+
+for word in words:
+  for category, category_words in self.categories.items():
+    if category_words[word]:
+      score[category] += log(category_words[word] / 
+      	self.word_count[category])
+    else:
+      score[category] += log(.01 / self.word_count[category])
+
+total = sum(self.word_count.values())
+for category in self.word_count:
+  score[category] += log(self.word_count[category] / total)
+
+if score:
+  return max(score, key = lambda x: score[x])
+
+return None</pre>
+
+<h4>Usage</h4>
+<pre class = "code">import bayes
+classifier = bayes.Classifier()
+
+data = [
+    ('training string 1', 'type_1'),
+    ('training string 2', 'type_1'),
+    ('training string 3', 'type_1'),
+    ('training string 4', 'type_2'),
+    ('training string 5', 'type_2')
+    ...
+]
+classifier.train(data)
+
+#you can save the data for later
+classifier.save('demo.bayes')
+
+print classifier.classify('this is a test string')</pre>
+
+<strong style = "float: right"><a href = "https://github.com/toddsifleet/bayes_classifier">full source on github</a></strong>
+<div class = "clear"></div>
+

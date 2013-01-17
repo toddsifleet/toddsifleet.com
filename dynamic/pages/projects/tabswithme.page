@@ -1,0 +1,14 @@
+:html-title: Tabs With Me -- A bill sharing service | Todd Sifleet
+:title: tabs with me
+:heading: tabswithme
+:order: 0
+:meta-description:
+	Tabs with me is an webapp to facilitate the sharing of bills/expenses between roommates and friends.  I built it with app engine, python (django) and bootstrap.
+
+:description:
+    This is a website that I built to help my roommates and I share our bills.  Instead of keeping a spreadsheet of what bills we pay we just add them to the tab.
+:content:
+    <p>
+        <a href="http://www.tabswithme.com">Tabs With Me</a> is a website that I built to help my roommates and I share our bills.  Instead of keeping a spreadsheet of what bills we pay we just add all payments and purchases to the tab and it reconciles everything.   I built it using python, appengine and bootstrap.
+    </p>
+    <img src = "http://www.tabswithme.com/static/images/screenshots/tab.png" width = 100%>

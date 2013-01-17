@@ -1,0 +1,23 @@
+:html_title: Contact Me -- Todd Sifleet
+:title: contact
+:home_page: True
+:heading: contact me
+:order: 4
+:styles:
+    #contact {
+        list-style-type: none;
+        font-size: 36px;
+        line-height: 54px;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    li {
+        clear: both;
+    }
+:content:
+    <ul id = "contact">
+        <li>linkedin: <a class = "pull-right" href="http://www.linkedin.com/in/toddsifleet" target="_blank">toddsifleet</a></li>
+        <li>github: <a class = "pull-right" href="https://github.com/toddsifleet" target="_blank">toddsifleet</a></li>
+        <li>email: <a class = "pull-right" href="mailto:todd.sifleet@gmail.com">todd.sifleet@gmail.com</a></li>
+    </ul>
