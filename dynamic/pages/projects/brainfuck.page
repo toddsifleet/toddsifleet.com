@@ -1,0 +1,29 @@
+:html-title: Popular github Forks
+:title: brainfuck interpreter
+:heading: brainfuck
+:template: blank.html
+:order: 0
+
+:meta-description:
+    A bubble chart of all forks of a github repo, showing: forks, stars, and last push.
+:description:
+    A bubble chart of all forks of a github repo, showing: forks, stars, and last push.  Built using the github api, D3, and coffeescript. 
+
+:imports:
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/scripts/brainfuck.js"></script>
+
+:styles:
+
+:scripts:
+
+foobar = function () {
+    bf = new BrainFuck()
+    bf.print = function(v) {
+        console.log(v); 
+    };
+    bf.execute("++++[>+++++<-]>[<+++++>-]+<+[>[>+>+<<-]++>>[<<+>>-]>>>[-]++>[-]+>>>+[[-]++++++>>>]<<<[[<++++++++<++>>-]+<.<[>----<-]<]<<[>>>>>[>>>[-]+++++++++<[>-<-]+++++++++>[-[<->-]+[<<<]]<[>+<-]>]<<-]<<-]")
+}
+
+:body:
+    
