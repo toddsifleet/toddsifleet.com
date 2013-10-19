@@ -2,6 +2,7 @@
 :title: bayes classifier
 :heading: bayes classifier
 :order: 1
+:published: 1
 
 :meta-description: 
     A python implementation of a naive bayes classifier, for classifying text documents.
@@ -17,12 +18,12 @@
 :content:
     <h3>What is a Naive Bayes Classifier?</h3>
     <p>
-        A <a href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier">naive bayes classifier</a> is used to classify items into different categories, based on the presence or absence of features.  Using the cumulative probability of each feature we are able to classify an unknown item. <b>In order for this to work we must train our classifier with known data.</b>
+        A <a href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier">naive bayes classifier</a> is used to classify items into different categories based on the presence or absence of features.  Using the cumulative probability of each feature appearing we are able to classify an unknown item. <b>In order for this to work we must train our classifier with known data.</b>
     </p>
 
     <h3>Note:</h3>
     <p>
-        A critical assumption is <b>feature Independence</b>, this means that the presence of one feature is independent of another feature.  i.e. the fact that an apple is red is independent of the fact that it has seeds.  
+        A critical assumption is <b>feature independence</b>, this means that the presence of one feature is independent of another feature.  i.e. the fact that an apple is red is independent of the fact that it has seeds.  
     </p>
 
     <h3>Example Usage</h3>

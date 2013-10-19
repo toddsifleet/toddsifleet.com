@@ -1,6 +1,7 @@
 :html-title: Project Euler -- Python
 :title: project euler
 :heading: euler
+:published: 1
 
 :meta-description:
     When I was learning python I spent some time solving the project euler problems.  This is the code for all of the problems I made it through. 

@@ -3,6 +3,8 @@
 :home_page: True
 :heading: contact me
 :order: 4
+:published: 1
+
 :styles:
     #contact {
         list-style-type: none;

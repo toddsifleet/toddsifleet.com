@@ -1,6 +1,8 @@
 :html-title: Automatic Bike Transmission
 :title: auto bike shifter
 :heading: auto bike shifter
+:published: 1
+
 :description: 
     This is a project I completed at GT, we retrofitted a bicycle with actuators to shift through the gears and sensors to measure speed, pedal rate, and angle of inclination. A controller was then used to shift accordingly.
 
