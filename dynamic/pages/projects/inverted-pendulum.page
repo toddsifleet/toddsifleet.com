@@ -1,0 +1,21 @@
+:html-title:  Inverted Pendulum | Python | LQR Control | Python-Control | Simulations | Todd Sifleet
+:title: inverted pendulum
+:heading: inverted pendulum
+:order: 8
+:published: 1
+
+:meta-description: 
+	An inverted pendulum simulation, written in python utilizing an LQR controller.
+
+:description: 
+	This is a video of a simulation I made with python and matplotlib.  It is the standard <a href="http://en.wikipedia.org/wiki/Inverted_pendulum">Inverted Pendulum</a> control problem, I implemented an <a href="http://en.wikipedia.org/wiki/Linear-quadratic_regulator">LQR Contoller</a> in <a href="http://sourceforge.net/apps/mediawiki/python-control/index.php?title=Main_Page">python-control</a> for stabilization.  To bring the pendulum from the down position to upright, I used an energy based controller. 
+
+:styles:
+
+:content:
+<p>  
+	This is a video of a simulation I made with python and matplotlib.  It is the standard <a href="http://en.wikipedia.org/wiki/Inverted_pendulum">Inverted Pendulum</a> control problem, I implemented a <a href="http://en.wikipedia.org/wiki/Linear-quadratic_regulator">LQR Controller</a> in <a href="http://sourceforge.net/apps/mediawiki/python-control/index.php?title=Main_Page">python-control</a> for stabilization.  To bring the pendulum from the down position to upright, I used an energy based controller.  
+</p>
+<center>
+	<object width="560" height="455"><param name="movie" value="http://www.youtube.com/v/x1j7A3unP1Q?hl=en&fs=1&ap=%2526fmt%3D18"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/x1j7A3unP1Q?hl=en&fs=1&ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="450"></embed></object>
+</center>
