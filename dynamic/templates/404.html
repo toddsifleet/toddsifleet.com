@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/static/style/layout_main.css?ver=2" rel="stylesheet" />
+        <title>Page Not Found</title>
+
+        <style>
+            #hero {
+                position: absolute;
+                margin-top: 25%;
+                width: 70%;
+                margin-right: 10%;
+                margin-left: 10%;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            #hero a {
+                text-decoration: none !important;
+            }
+
+            #hero h1, h2 {
+                font-size: 34px;
+                color: #FF5000;
+                text-align: left;
+                margin: 15px;
+                margin-bottom: 5px;
+                font-weight: normal;
+            }
+
+            #url, #new-url {
+                margin-left: 25px;
+            }
+
+            #new-url, #redirect {
+                display: none;
+            }
+        </style>
+        <script>
+            var redirect_in_seconds = 4;
+            function load(){
+                var url = document.URL;
+                //if the all lower case url works send them there
+                if (url.toLowerCase() != url) {
+                    check_url(url.toLowerCase());
+                }
+                document.getElementById('url').innerHTML = document.URL;
+            }
+
+            function check_url(url) {
+                var request = new XMLHttpRequest();  
+                request.open('GET', url, true);  
+                request.send();  
+
+                request.onload = function() {
+                    if (request.status == '200') {
+                        var ele = document.getElementById('new-url')
+                        ele.innerHTML = '<a href = "' + url + '">' + url + '</a>';
+                        ele.style.display = 'block';
+                        document.getElementById('redirect').style.display = 'block';
+                        document.getElementById('time').innerHTML = redirect_in_seconds;
+                        window.setInterval(function() {
+                            if (--redirect_in_seconds <= 0) {
+                                window.location = url;
+                            }
+                            else {
+                                document.getElementById('time').innerHTML = redirect_in_seconds;
+                            }
+                            }
+                        , 1000);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload = "load()">
+        <div class="home_box" id = "hero"> 
+            <h1>
+                404 Error -- Page Not Found:
+            </h1>
+
+            <div id = "url">
+            </div>
+            <h1 id = "redirect">
+                Redirecting in <span id = "time"></span> seconds:
+            </h1>
+            <div id = "new-url">
+            </div>
+            <div class = "clear">
+                <a class = "pull-right" href = "/">go home</a>
+            </div>
+            
+        </div>
+    </body>
+</html>

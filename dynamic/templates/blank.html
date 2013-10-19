@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ client_js_code }}
+        <meta name="msvalidate.01" content="EE224A87A74468D1C27B404FE134DC6C" />
+        {% if page.meta_description %}<meta name="description" content = "{{ page.meta_description }}">{% endif %}
+        {% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}">{% endif %} 
+        <script type="text/javascript">    
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-20974237-1']);
+            _gaq.push(['_trackPageview']);
+          
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+            function show_navigation() {
+                var title = "{{ page.title }}";
+                var navigation = document.getElementById("nav-menu");
+                var navigation_button = document.getElementById("mobile-nav-button");
+                var height = navigation.style.getPropertyValue('max-height');
+                if (height == '0px' || height == null) {
+                    navigation.style.setProperty('max-height', {{navigation_links|length}} * 70 + 'px');
+                    navigation_button.innerHTML = "- " + title + " -";
+                }
+                else {  
+                    navigation.style.setProperty('max-height', '0px');
+                    navigation_button.innerHTML = "+ " + title + " +";
+                    
+                }
+            }
+            
+            {% block scripts %}
+                {{ page.scripts | safe}}
+            {% endblock %}
+        </script>
+            {% block styles %}
+                <style>
+                    {{ page.styles | safe }}
+                </style>
+            {% endblock %}
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <title>
+            {% if page.html_title %} 
+                {{ page.html_title }}
+            {% else %}
+                Mechatronics | Arduino | Python | app engine -- Todd Sifleet
+            {% endif %}
+        </title>
+    </head>
+    <body>
+        {% block body %}
+            {{ page.body }}
+        {% endblock %}
+    </body>
+    {% block imports %}{{ page.imports}}{% endblock %}
+</html>

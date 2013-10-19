@@ -1,66 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="msvalidate.01" content="EE224A87A74468D1C27B404FE134DC6C" />
-        {% if page.meta_description %}<meta name="description" content = "{{ page.meta_description }}">{% endif %}
-        {% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}">{% endif %} 
-        {% block imports %}{{ page.imports}}{% endblock %}
-        <script type="text/javascript">    
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-20974237-1']);
-            _gaq.push(['_trackPageview']);
-          
-            (function() {
-              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+{% extends "blank.html" %}
+{% block styles %}
+    <link href="/static/style/layout_main.css?ver=2" rel="stylesheet" />
+    <style>
+        {{ page.styles | safe }}
+    </style>
+{% endblock %}
 
-            function show_navigation() {
-                var title = "{{ page.title }}";
-                var navigation = document.getElementById("nav-menu");
-                var navigation_button = document.getElementById("mobile-nav-button");
-                var height = navigation.style.getPropertyValue('max-height');
-                if (height == '0px' || height == null) {
-                    navigation.style.setProperty('max-height', {{navigation_links|length}} * 70 + 'px');
-                    navigation_button.innerHTML = "- " + title + " -";
-                }
-                else {  
-                    navigation.style.setProperty('max-height', '0px');
-                    navigation_button.innerHTML = "+ " + title + " +";
-                    
-                }
-            }
-
-            {% if dev_server %}
-                //this is used to automatically refresh the page when we are developing
-                //it really speeds up the iteration cycles
-                window.onload = function() {
-                    var s = new WebSocket("ws://{{dev_server.host}}:{{dev_server.port}}/");
-                    s.onopen = function(e) { document.title = 'MONITORING'; };
-                    s.onclose = function(e) { document.title = 'NO MONITORING';  };
-                    s.onmessage = function(e) {document.location.reload(true); };
-                };
-            {% endif %}
-            {% block scripts %}
-                {{ page.scripts | safe}}
-            {% endblock %}
-        </script>
-        <style>
-            {% block styles %}
-                {{ page.styles | safe }}
-            {% endblock %}
-        </style>
-        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-        <title>
-            {% if page.html_title %} 
-                {{ page.html_title }}
-            {% else %}
-                Mechatronics | Arduino | Python | app engine -- Todd Sifleet
-            {% endif %}
-        </title>
-        <link href="/static/style/layout_main.css?ver=2" rel="stylesheet" />
-    </head>
+{% block body %}
     <body>
         <div class="container">
             <div id = "navigation">
@@ -99,7 +45,7 @@
             
         </div>
         <div class = "footer">
-            &copy; 2013 Todd Sifleet | generated with <a href = "//github.com/toddsifleet/staticpy">Static Py</a>
+            &copy; 2013 <a href = "#" onClick = "alert(window.innerWidth)">Todd Sifleet<a/> | generated with <a href = "//github.com/toddsifleet/staticpy">Static Py</a>
         </div>
     </body>
-</html>
+{% endblock %}
