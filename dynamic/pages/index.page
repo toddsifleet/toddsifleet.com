@@ -20,17 +20,11 @@
         float: left;
     }
 
-    .skills {
-        float: left;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-
     h2 {
         margin:0px; 
         padding:0px; 
-        border-bottom: 1px solid #aaa;
         width: 100%;
+        text-align: right;
     }
 
     .project {
@@ -58,17 +52,11 @@
     <div class="home_box" id = "hero"> 
         <strong>Todd Sifleet</strong> a fullstack developer specializing in python, ruby and web development.  I  work with a myriad of technologies to solve challenging business problems.
     </div>
-    
-    <h2><a href = "/skills">skills</a>:</h2>
-    <div class = "home_box skills">
-        python, perl, ruby, rails, django, javascript, coffee script, css, less, html, json/xml and SQL
-    </div>
 
-    <h2><a href = "/projects">projects</a>:</h2> 
-    <div class = "project">
+    <h2><a href = "/projects">projects</a></h2> 
+    <div class = "project" style = "margin-top: 5px;">
         <h3><a href="https://github.com/toddsifleet/staticpy">Static Py</a></h3>
         <p>
-            
             <ul>
                 <li>A fully custamizable static website generator, this generator imposes very few restrictions, allowing you to fully customize your site.</li>
                 <li>Uses the <a href="http://jinja.pocoo.org/">jinja</a> templating engine.</li>
