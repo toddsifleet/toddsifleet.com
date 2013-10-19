@@ -1,0 +1,62 @@
+:html-title:  Task Allocation and Coordination in a Distributed Environment | Todd Sifleet
+:title: global design
+:heading: global design
+:order: 4
+:published: 1
+
+:meta-description: 
+    A Computational Method for Task Allocation and Coordination in a Distributed Design Environment
+
+:description: 
+    This is a series of papers on a computational method for task allocation and coordination in a distributed design environment.  I worked with Jay Johnson and Hao Wu at GT over the course of a semester and a half on this work, and getting the final one published.  We built off of the <a href="http://www.enge.vt.edu/terpenny/Smart/Virtual_econ/Module2/pahl_and_beitz_method.htm">Pahl and Beitz Method</a> updated for a distributed design environment and added a computational method for task allocation.
+
+:styles:
+	blockquote {
+		border: 2px dotted #205c90;
+        background-color: #dee7ee;
+        padding: 10px;
+	}
+
+	.source {
+		float:right;
+		margin-right: 40px;
+	}
+
+	h4 {
+		line-height: 1.2em !important;
+	}
+:content:
+<h4>A Computational Method for Task Allocation and Coordination in a Distributed Design Environment</h4>
+
+<p>
+	I worked with Jay Johnson and Hao Wu at GT over the course of a semester and a half on this work, and finally getting it published.  We built off of the <a href="http://www.amazon.com/Engineering-Design-A-Systematic-Approach/dp/3540199179/ref=sr_1_1?ie=UTF8&qid=1360112392&sr=8-1&keywords=pahl+and+beitz">Pahl and Beitz Method</a> updated it for a distributed design environment and added a computational method for task allocation.
+</p>
+
+<p> 
+	This work began as a semester long project in ME6101 around the Pahl and Beitz method, we decided to focus on the challenges of the new "flat-world" we live in.  In the future design teams will be spread across the globe, it will be important to effectively allocate work, and coordinate communication between these designers. See our executive summary below
+	</p>
+
+<blockquote>
+	Design complexity leads to the failure of many engineering systems because modifications to one component of the design cause successive feedbacks through interrelated design components. This feedback chain reaction ripples through the project and does not allow the design solution to converge. To compensate for these difficulties and answer our tweaked Question for the Semester, we are proposing a new design method for the future design world of 2030. This design method is based on the Pahl and Beitz systematic design method but accounts for the design of complex systems using globally distributed designers.
+<p>
+	In order to create the design method for complex engineered systems in 2030, we have created our vision of the world of 2030 which accounts for other changes in the design environment and global dynamics. Using these drivers, we see required changes in the design process relating to the organization and coordination of design teams. By using the P&B design method as a basis, we augmented and personalized the P&B steps to modify the flow of information to complete design of complex engineered systems in 2030.
+</p>
+<p>
+	In this context, we put forward our augmented and personalized method to effectively organize the workforce and coordinate the activities of design teams. The personalization and augmentation of P&B include three novel steps: 1) determine the interrelated tasks in the design, 2) intelligently divide the design workforce into teams to complete the tasks, and 3) determine when and how to coordinate the teams to minimize the design feedbacks. These three stages will be applied at the beginning of the Conceptual, Embodiment and Detailed Design phases of the design process.
+</p>
+<p>
+	To complete these steps, we use three computational tools to model the design and the designers. First, we use the Design Structure Matrix (DSM) to identify the interdependence among design tasks. Second, we use a genetic algorithm (GA) to divide workforce into teams for the tasks. Finally, we use agent-based modeling (ABM) to find out the best coordination strategy. The modeling approaches involving the DSM, GA and ABM are introduced and verified with test cases.
+</p>
+<p>
+	Finally, we begin the validation of our augmented method by going through the Validation Square process. We argue the theoretical structural validity of the method by demonstrating the information flow within the augmented and personalized method is consistent. Then to show the empirical validation by selecting a complex design project. We look at the design of a hybrid vehicle to illustrate that the method gives good results and to begin the empirical performance validity of some of the components of the new design method. With additional examples and meaningful results, the theoretical performance validity of this method can also be expected. 
+</p>
+</blockquote>
+<a href="/static/computational_method_distributed_design.pdf" class = "source">Full Paper</a>
+<div class = "clear"></div>
+<h4>Publication:</h4>
+<p> We went on to adapt this work for the ASME 2008 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference.  The abstract can be found below:
+</p><blockquote>
+Managing the product realization process is a difficult endeavor in today's global product development environment. Design project managers are required to form teams from geographically distributed designers as well as effectively manage the collaborative design process. In this paper, a computational method is proposed to aid design managers in allocating design tasks to geographically distributed designers and identify appropriate coordination mechanisms to manage the collaborative design process. The method involves three stages: i) arriving at an initial design task sequence using the design structure matrix through partitioning of design tasks into blocks of dependent, independent and interdependent tasks, ii) allocating of design tasks to design teams and the improvement of the design sequence accounting for the number of designers available and their competencies and iii) determination of design review meeting frequencies as a coordination mechanism for interdependent tasks using agent based modeling simulations.
+</blockquote>
+
+<a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=ASMECP002008043277000595000001&idtype=cvips&gifs=yes&ref=no" class = "source">ASME</a>
