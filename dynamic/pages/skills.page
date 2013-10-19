@@ -26,11 +26,11 @@
         font-size: .8em;
     }
 
-    .proficient {
+    .expert {
         color: green;
     }
 
-    .comfortable {
+    .proficient {
         color: black;
     }
 
@@ -44,31 +44,31 @@
 :content:
     <h2>Languages</h2>
     <a name="python"></a>
-    <h4 class = "skill">python:<span class = "proficient pull-right">EXPERT</span></h4>
+    <h4 class = "skill">python:<span class = "expert pull-right">EXPERT</span></h4>
     <p>
         I have been writing python since 2007 including web sites, number crunching, command line utilities, machine learning.  Python is my favorite language to work in, I love it!
     </p>
 
     <a name="perl"></a>
-    <h4 class = "skill">perl: <span class = "proficient pull-right">EXPERT</span></h4>
+    <h4 class = "skill">perl: <span class = "expert pull-right">EXPERT</span></h4>
     <p>
         I write a lot of perl code day to day.  Perl is my favorite language for anything text processing or quick sys-admin like scripts.  Currently I have been using Moose to bring some sanity to perl's object system. 
     </p>
 
     <a name="ruby"></a>
-    <h4 class = "skill">ruby: <span class = "proficient pull-right">PROFICIENT</span></h4>
+    <h4 class = "skill">ruby: <span class = "expert pull-right">EXPERT</span></h4>
     <p>
         I have been programming Ruby/Rails since early 2013.  I really enjoy the style and speed of ruby development.  Rails in my opinion is the quickest way to build dynamic we applications.
     </p>
 
     <a name="javascript"></a>
-    <h4 class = "skill">javascript <span class = "comfortable pull-right">PROFICIENT</span></h4>
+    <h4 class = "skill">javascript <span class = "proficient pull-right">PROFICIENT</span></h4>
     <p>
         I am not as strong with javascript as the above languages, but I am always getting better.  When mixed with <a href = "http://jquery.com/">jQuery</a> I love the power that it offers in the browser.  I am looking forward to learning a JS framework like <a href = "http://documentcloud.github.com/backbone/">backbone.js</a> or <a href = "http://angularjs.org/">angular.js</a>
     </p>    
 
     <a name="css-html"></a>
-    <h4 class = "skill">css and html <span class = "comfortable pull-right">PROFICIENT</span></h4>
+    <h4 class = "skill">css and html <span class = "proficient pull-right">PROFICIENT</span></h4>
     <p>
         I am by no means a designer, but I am great at implementing effective web sites/interfaces.  For consitent and responsive designs I use <a href = "http://twitter.github.com/bootstrap/">Bootstrap</a>, I also use <a href = "http://lesscss.org/">less</a> to make my CSS <a href = "http://en.wikipedia.org/wiki/Don't_repeat_yourself">DRYER</a>.  I am awlays working on getting better as a designer.
     </p>

@@ -56,7 +56,7 @@
     }
 :content:
     <div class="home_box" id = "hero"> 
-        <strong>Todd Sifleet</strong> a fullstack developer specializing in python and web development.  I  work with a myriad of technologies to solve challenging business problems.
+        <strong>Todd Sifleet</strong> a fullstack developer specializing in python, ruby and web development.  I  work with a myriad of technologies to solve challenging business problems.
     </div>
     
     <h2><a href = "/skills">skills</a>:</h2>
