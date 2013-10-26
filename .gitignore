@@ -3,4 +3,4 @@ static*
 *.pyc
 settings.py
 appengine
-.swp
+*.swp
