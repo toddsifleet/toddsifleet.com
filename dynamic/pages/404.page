@@ -1,3 +1,4 @@
 :html-title: 404 Page Not Found | Todd Sifleet
 :template: 404.html
 :published: 1
+:no-sitemap: 1
