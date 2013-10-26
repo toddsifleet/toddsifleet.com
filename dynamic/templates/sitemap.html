@@ -7,7 +7,7 @@
 {% for page in pages %}
   <url>
     <loc>{{base_url}}{%if page.url %}/{% endif %}{{ page.url }}</loc>
-    <lastmod>{{page.last_modified}}</lastmod>
+    <lastmod>{{page.last_modified.isoformat()}}</lastmod>
     <changefreq>{% if page.change_frequency %}{{page.change_frequency}}{%else%}weekly{%endif%}</changefreq>
   </url>
 {% endfor %}
