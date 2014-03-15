@@ -1,0 +1,38 @@
+:html-title: Find Bike Parking in San Francisco
+:title: SF Bike Parking
+:heading: SF Bike Parking
+:template: blank.html
+:order: 0
+:published: 1
+:meta-description:
+  Find a parking spot for your bike in San Francisco
+  
+:description:
+  Find a parking spot for your bike in San Francisco
+
+:imports:
+  <link rel="stylesheet" type="text/css" href="/static/style/sf_bike_parking.css">
+  <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script src="/static/scripts/sf_bike_parking.js"></script>
+
+:body:
+  <div id="popup-template">
+    <div class="popup">
+      <h1>{{spot.location}}</h1>
+      <ul>
+        <li>Address: {{spot.address}}</li>
+        <li>Racks: {{spot.racks}}</li>
+        <li>Spaces: {{spot.spaces}}</li>
+        <li>Placement: {{spot.placement}}</li>
+      </ul>
+      <strong>
+        <a href="https://www.google.com/maps/dir/{{current.d}},{{current.e}}/{{spot.latitude}},{{spot.longitude}}">Google Maps</a>
+      </strong>
+    </div>
+  </div>
+  <div id="controls">
+    <input id="address" type="textbox" value="Loading....">
+  </div>
+  <div id="map-canvas"></div>
