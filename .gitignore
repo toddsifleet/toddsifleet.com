@@ -5,3 +5,4 @@ appengine
 *.swp
 *.pdf
 sitemap.xml
+.output/*
