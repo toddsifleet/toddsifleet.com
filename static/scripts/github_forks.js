@@ -13,10 +13,8 @@
   get_data = function(repo) {
     var path;
     path = "https://api.github.com/repos/" + repo + "/forks?sort=watchers&direction=dsc";
-    path = "http://dynamic.toddsifleet.com/github?query=repos/" + repo + "/forks";
     return $.ajax({
       url: path,
-      dataType: 'jsonp',
       success: function(response) {
         return handle_response(repo, response);
       }
