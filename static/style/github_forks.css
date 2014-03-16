@@ -1,6 +1,11 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 50px;
+}
+
+td {
+  padding: 8px;
 }
 
 #forks {
@@ -10,6 +15,8 @@ table {
 body, html {
   margin: 0px;
   padding: 0px;
+  font-family: 'Lucida Grande';
+  font-size: 19px;
 }
 
 #chart {
@@ -119,6 +126,8 @@ thead {
   text-align: right;
   margin-top: 25px;
   margin-right: 25px;
+  padding: 8px;
+  line-height: 1.2em;
 }
 
 #results {
