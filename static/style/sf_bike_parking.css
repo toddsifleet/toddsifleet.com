@@ -8,29 +8,13 @@ html, body, #map-canvas {
   display: none;
 }
 
-.popup {
-  width: 300px;
-  max-width: 100%;
-  z-index: 1000;
-}
-
-.popup h1 {
-  font-size: 2em;
-  margin-top: -5px;
-  margin-right: 15px;
-}
-
-.popup strong {
-  float:right;
-  font-size: 1.5em;
-}
-
 #map-canvas {
   height: 100%;
   width: 100%;
 }
 
 #controls {
+  height: 0px;
   text-align: center;
   position: absolute;
   top: 5px;
@@ -39,14 +23,40 @@ html, body, #map-canvas {
   z-index: 2;
 }
 
-#address {
-  width: 600px;
-  max-width: 100%;
-  padding: 0 15px;
-  background-color: rgb(255, 255, 255);
+#address,
+#notice,
+#spot-info {
+  width: 90%;
+  max-width: 600px;
   font-family: 'Lucida Grande';
   font-size: 19px;
-  height: 42px;
   text-align: center;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+#address {
+  padding: 0 15px;
+  height: 42px;
+  display: block;
+}
+
+.flash-notice {
+  border: 1px solid #555555;
+  padding: 10px 15px;
+  display: none;
+}
+
+#notice {
+  background-color: #FF5050;
+}
+
+#spot-info {
+  background-color: #D4E6D4;
+}
+
+#spot-info a {
+  text-decoration: none;
+  color: #001A33;
 }
 

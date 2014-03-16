@@ -5,17 +5,20 @@ $(function() {
   };
 
   var flashError = function(message) {
-    // TODO: Show user a message
     console.log(message);
+    $('#notice').slideDown().html(message);
+    setTimeout(function() {
+      $('#notice').slideUp();
+    }, 4000);
   };
 
   var addMarker = function(spot, icon) {
-    if (markers[spot.id]) return;
+    if (spot.marker) return;
     var position = spot.coords || new google.maps.LatLng(
       spot.lat,
       spot.lng
     );
-    return markers[spot.id] = new google.maps.Marker({
+    return spot.marker = new google.maps.Marker({
       map: map,
       position: position,
       icon: icon
@@ -42,16 +45,13 @@ $(function() {
     });
   }
 
-  var drawInfoWindow = function(marker, spot) {
-    current_info_window = new google.maps.InfoWindow({
-      content: Mustache.render(popup_template, {
-        spot: spot,
-        current: current_position.coords
-      })
-    });
-    google.maps.event.addListener(current_info_window, 'closeclick', clearMap);
+  var showSpotInfo = function(marker, spot) {
+    $('#spot-info').slideDown().html(Mustache.render(popup_template, {
+      spot: spot,
+      current: current_position.coords
+    }));
+;
     drawDirections(spot);
-    current_info_window.open(map, marker);
   }
 
   var drawParkingSpot = function(spot) {
@@ -60,7 +60,7 @@ $(function() {
 
     google.maps.event.addListener(marker, 'click', function() {
       clearMap();
-      drawInfoWindow(marker, spot);
+      showSpotInfo(marker, spot);
     });
   }
 
@@ -82,23 +82,29 @@ $(function() {
     }
     var north_east = bounds.getNorthEast(),
         south_west = bounds.getSouthWest();
+
+    var found_a_spot = false;
     for (var i in parking_spots) {
-      var point = parking_spots[i];
-      if (pointInBounds(point, north_east, south_west)) {
-        drawParkingSpot(point);
+      var spot = parking_spots[i];
+      if (pointInBounds(spot, north_east, south_west)) {
+        drawParkingSpot(spot);
+        found_a_spot = true;
       }
+      else {
+        delete spot.marker;
+      }
+    }
+    if (!found_a_spot) {
+      flashError('Sorry Could not Find any spots, data is only available in SF.');
     }
   }
 
   var updateCurrentPosition = function(position) {
-    if (markers['current_position']) {
-      markers['current_position'].setMap(null);
-      delete markers['current_position'];
-    }
     current_position = {
       id: 'current_position',
       coords: position
     };
+
     addMarker(current_position,
       'http://maps.google.com/mapfiles/kml/pal4/icon47.png'
     );
@@ -204,7 +210,6 @@ $(function() {
     current_info_window,
     geocoder = new google.maps.Geocoder(),
     map,
-    markers = {},
     popup_template = $('#popup-template').html();
     directions = initDirections();
 
@@ -212,7 +217,6 @@ $(function() {
   initDefaults();
   initUserInput();
   loadData();
-
 });
 
 

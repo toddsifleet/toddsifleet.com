@@ -19,20 +19,13 @@
 
 :body:
   <div id="popup-template">
-    <div class="popup">
-      <h1>{{spot.location}}</h1>
-      <ul>
-        <li>Address: {{spot.address}}</li>
-        <li>Racks: {{spot.racks}}</li>
-        <li>Spaces: {{spot.spaces}}</li>
-        <li>Placement: {{spot.placement}}</li>
-      </ul>
-      <strong>
-        <a href="https://www.google.com/maps/dir/{{current.d}},{{current.e}}/{{spot.latitude}},{{spot.longitude}}">Google Maps</a>
-      </strong>
-    </div>
+    <a href="https://www.google.com/maps/dir/{{current.d}},{{current.e}}/{{spot.lat}},{{spot.lng}}">
+      {{spot.address}} has {{spot.racks}} rack[s] and {{spot.spaces}} space[s] ({{spot.placement}})
+    </a>
   </div>
   <div id="controls">
     <input id="address" type="textbox" value="Loading....">
+    <div id="notice" class="flash-notice"></div>
+    <div id="spot-info" class="flash-notice"></div>
   </div>
   <div id="map-canvas"></div>
