@@ -1,7 +1,18 @@
 $(function() {
+  var pluralize = function(count, word) {
+    if (count > 1) word += 's';
+    return count + ' ' + word;
+  };
+
   var clearMap  = function() {
-    current_info_window && current_info_window.close();
+    show_markers = false;
     directions.display.setMap(null);
+    for (var i in parking_spots) {
+      if (parking_spots[i].marker) {
+        parking_spots[i].marker.setMap(null);
+        delete parking_spots[i].marker;
+      }
+    }
   };
 
   var flashError = function(message) {
@@ -13,19 +24,21 @@ $(function() {
   };
 
   var addMarker = function(spot, icon) {
-    if (spot.marker) return;
-    var position = spot.coords || new google.maps.LatLng(
-      spot.lat,
-      spot.lng
-    );
+    if (spot.marker || !show_markers) return;
+    if (!spot.coords) {
+      spot.coords = new google.maps.LatLng(
+        spot.lat,
+        spot.lng
+      );
+    }
     return spot.marker = new google.maps.Marker({
       map: map,
-      position: position,
+      position: spot.coords,
       icon: icon
     });
   };
 
-  var drawDirections = function(spot) {
+  var getDirections = function(spot) {
     var request = {
       travelMode: 'BICYCLING',
       origin: current_position.coords,
@@ -38,6 +51,7 @@ $(function() {
       if (status == google.maps.DirectionsStatus.OK) {
         directions.display.setMap(map);
         directions.display.setDirections(response);
+        showSpotInfo(spot, response);
       }
       else {
         flashError(status);
@@ -45,13 +59,21 @@ $(function() {
     });
   }
 
-  var showSpotInfo = function(marker, spot) {
+  var showSpotInfo = function(spot, directions) {
+    var legs = directions.routes[0].legs
+    var duration = 0;
+    for (var i in legs) {
+      duration += legs[i].duration.value;
+    }
+
+    duration = Math.ceil(duration/60);
     $('#spot-info').slideDown().html(Mustache.render(popup_template, {
       spot: spot,
-      current: current_position.coords
+      current: current_position.coords,
+      racks: pluralize(spot.racks, 'rack'),
+      spaces: pluralize(spot.spaces, 'space'),
+      duration: pluralize(duration, 'minute')
     }));
-;
-    drawDirections(spot);
   }
 
   var drawParkingSpot = function(spot) {
@@ -60,7 +82,7 @@ $(function() {
 
     google.maps.event.addListener(marker, 'click', function() {
       clearMap();
-      showSpotInfo(marker, spot);
+      getDirections(spot);
     });
   }
 
@@ -173,8 +195,6 @@ $(function() {
       document.getElementById('map-canvas'),
       mapOptions
     );
-
-    $(document).on('click', "a.direction", drawDirections);
   }
 
   var initUserInput = function() {
@@ -187,6 +207,13 @@ $(function() {
     address_input.on('focus', function (argument) {
       address_input.unbind('focus');
       address_input.val('');
+    });
+
+    $(document).on('click', '.close-link', function(e) {
+      $(this).closest('div').hide();
+      clearMap();
+      show_markers = true;
+      updateParkingSpots();
     });
   }
 
@@ -207,7 +234,7 @@ $(function() {
 
   var current_position,
     parking_spots,
-    current_info_window,
+    show_markers = true,
     geocoder = new google.maps.Geocoder(),
     map,
     popup_template = $('#popup-template').html();
