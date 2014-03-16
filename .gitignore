@@ -1,7 +1,6 @@
 .DS_Store
 *.pyc
 settings.py
-appengine
 *.swp
 *.pdf
 sitemap.xml
