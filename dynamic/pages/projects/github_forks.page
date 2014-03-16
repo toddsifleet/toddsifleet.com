@@ -12,24 +12,24 @@
 :imports:
   <link rel="stylesheet" type="text/css" href="/static/style/github_forks.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="/static/scripts/github_forks.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+  <script src="/static/scripts/github_forks.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
 
 :styles:
 :body:
-  <div id = "search">
-    <input type = "text" value = "e.g. jquery/jquery" id = "repo_name">
-    <input type = "button" value = "Find Forks" id = "find_forks">
-    <div id = "error">
+  <div id="search">
+    <input type="text" value="e.g. jquery/jquery" id="repo_name">
+    <input type="button" value="Find Forks" id="find_forks">
+    <div id="error">
     </div>
   </div>
-  <div id = "legend">
+  <div id="legend">
   </div>
-  <div id = "chart">
+  <div id="chart">
   </div>
-  <div id = "results">
+  <div id="results">
     <center>
-      <table id = "forks">
+      <table id="forks">
         <thead>
           <tr>
             <td>Name</td>
@@ -43,6 +43,6 @@
       </table>
     </center>
   </div>
-  <div id = "footer">
-    &copy; 2013 <a href = "http://www.toddsifleet.com"> Todd Sifleet<a/> | generated with <a href = "//github.com/toddsifleet/staticpy" style = "margin-right: 25px">Static Py</a>
+  <div id="footer">
+    &copy; 2013 <a href="http://www.toddsifleet.com"> Todd Sifleet<a/> | generated with <a href="//github.com/toddsifleet/staticpy" style="margin-right: 25px">Static Py</a>
   </div>
