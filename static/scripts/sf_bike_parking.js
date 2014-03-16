@@ -67,7 +67,8 @@ $(function() {
     }
 
     duration = Math.ceil(duration/60);
-    $('#spot-info').slideDown().html(Mustache.render(popup_template, {
+    $('#address').hide();
+    $('#spot-info').show().html(Mustache.render(popup_template, {
       spot: spot,
       current: current_position.coords,
       racks: pluralize(spot.racks, 'rack'),
@@ -117,7 +118,7 @@ $(function() {
       }
     }
     if (!found_a_spot) {
-      flashError('Sorry Could not Find any spots, data is only available in SF.');
+      flashError('Sorry could not find any spots, data is only available in SF.');
     }
   }
 
@@ -143,6 +144,7 @@ $(function() {
     var data = { 'address': $('#address').val() };
     geocoder.geocode(data, function(results, status) {
       if (status === google.maps.GeocoderStatus.OK) {
+        show_markers = true;
         updateMap(results[0].geometry.location);
       }
       else {
@@ -169,7 +171,7 @@ $(function() {
   }
 
   var initDefaults = function() {
-    if (!navigator.geolocation) {
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(onPositionCoords);
     }
     else {
@@ -211,6 +213,7 @@ $(function() {
 
     $(document).on('click', '.close-link', function(e) {
       $(this).closest('div').hide();
+      $('#address').show();
       clearMap();
       show_markers = true;
       updateParkingSpots();
