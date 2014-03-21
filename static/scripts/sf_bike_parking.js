@@ -170,17 +170,21 @@ $(function() {
     });
   }
 
+  var onPositionNotfound = function() {
+    onPositionCoords({
+      coords: {
+        latitude: 37.7908906,
+        longitude: -122.3930944
+      }
+    });
+  };
+
   var initDefaults = function() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(onPositionCoords);
+      navigator.geolocation.getCurrentPosition(onPositionCoords, onPositionNotfound);
     }
     else {
-      onPositionCoords({
-        coords: {
-          latitude: 37.7908906,
-          longitude: -122.3930944
-        }
-      })
+      onPositionNotfound();
     }
   }
 
