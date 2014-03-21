@@ -30,13 +30,13 @@
         <img src="/static/images/toddsifleet.jpg" class = "portrait">I am Todd Sifleet I grew up in the Boston area, then went to Union College in upstate NY and graduate school at Georgia Tech in Atlanta.  I enjoy solving challenging problems by utilizing bleeding edge technology and software solutions. 
     </p>
     <p>
-        I am a mechanical engineer by training, but I focus on software systems.  I have a BS degree in mechanical engineering with a minor in math from <a href="http://www.union.edu"  target="_blank">Union College</a> and an MS from the <a href="http://www.gatech.edu">Georgia Institute of Technology</a>, at GT I focused on the design and fabrication of mechatronic (mechanical, electrical, and software) systems.
+      I have a BS degree in mechanical engineering with a minor in math from <a href="http://www.union.edu"  target="_blank">Union College</a> and an MS from the <a href="http://www.gatech.edu">Georgia Institute of Technology</a>, at GT I focused on the design and fabrication of mechatronic (mechanical, electrical, and software) systems.
     </p>
     <p>
-        Since finishing school I have been working as a software developer building online applications.  I currently work at <a href = "//athenahealth.com">athenahealth</a> in Boston as a software developer, we are solving some really challenging problems related to healthcare technology.
+        Since finishing school I have been working as a software developer building online applications.  Initially working at <a href = "//athenahealth.com">athenahealth</a> in Boston as a software developer, solving some really challenging problems related to healthcare technology.  Currently I work as a fullstack developer at <a href = "//sermo.com">sermo</a> which is helping to bring physicians together. 
     </p>
     <p>
-         At Athena I started out working on interfaces between our software and other independent systems.  Working on interfaces I learned a lot about the challenges and requirements for successful data portability.  This year I started working on rebuilding how he handle clinical orders, it has been quite a challenge. 
+         Working at Athena I learned a lot about the challenges and requirements for successful data portability and integrity in the healthcare system.  At sermo I have been working on a large multi-app Rails codebase, we have been working on some challenging scaling and internationalization (i18n) issues.   
     </p>
 
     <span class = "pull-right">-Todd Sifleet</span>
