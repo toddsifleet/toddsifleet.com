@@ -7,53 +7,51 @@
 {% endblock %}
 
 {% block body %}
-    <body>
-        <div class="container">
-            <div id = "navigation">
-                <a href = "#" onClick = "show_navigation(); return false;">
-                    <div id = "mobile-nav-button">
-                        + {{ page.title }} +
-                    </div>
-                </a>
-                <ul id = "nav-menu">
-                    {% for link in navigation_links %}
-                        {% if link.url == page.url %}
-                            <li class = "hide-on-phone">{{ link.title }}</li>
-                        {% else %}
-                            <a href="/{{ link.url }}">
-                                <li>{{ link.title }}</li>
-                            </a>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="inner_container" >
-                {% block title %}
-                    <div class = "title-bar hide-on-phone">
-                        <h1>
-                            {{ page.heading }}
-                        </h1>
-                    </div>
-                {% endblock %}
-                <div class = "content">
-                    {% block content %}
-                        {{ page.content | safe}}
-                    {% endblock %}
+    <div class="container">
+        <div id = "navigation">
+            <a href = "#" onClick = "show_navigation(); return false;">
+                <div id = "mobile-nav-button">
+                    + {{ page.title }} +
                 </div>
+            </a>
+            <ul id = "nav-menu">
+                {% for link in navigation_links %}
+                    {% if link.url == page.url %}
+                        <li class = "hide-on-phone">{{ link.title }}</li>
+                    {% else %}
+                        <a href="/{{ link.url }}">
+                            <li>{{ link.title }}</li>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="inner_container" >
+            {% block title %}
+                <div class = "title-bar hide-on-phone">
+                    <h1>
+                        {{ page.heading }}
+                    </h1>
+                </div>
+            {% endblock %}
+            <div class = "content">
+                {% block content %}
+                    {{ page.content | safe}}
+                {% endblock %}
             </div>
-            <div class = "clear"></div>
-            
         </div>
-        <div class = "footer">
-            &copy; 2013 <a href = "#" onClick = "alert(window.innerWidth)">Todd Sifleet<a/> | generated with <a href = "//github.com/toddsifleet/staticpy">Static Py</a>
-        </div>
-        <style type="text/css">
-            #navigation a {
-                -moz-transition: color .25s;
-                -webkit-transition: color .25s;
-                -o-transition: color .25s;
-                transition: color .25s;
-            }
-        </style>
-    </body>
+        <div class = "clear"></div>
+
+    </div>
+    <div class = "footer">
+        &copy; 2013 <a href = "#" onClick = "alert(window.innerWidth)">Todd Sifleet<a/> | generated with <a href = "//github.com/toddsifleet/staticpy">Static Py</a>
+    </div>
+    <style type="text/css">
+        #navigation a {
+            -moz-transition: color .25s;
+            -webkit-transition: color .25s;
+            -o-transition: color .25s;
+            transition: color .25s;
+        }
+    </style>
 {% endblock %}
