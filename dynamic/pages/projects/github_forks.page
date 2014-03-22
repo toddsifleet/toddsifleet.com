@@ -9,13 +9,14 @@
 :description:
   A bubble chart of all forks of a github repo, showing: forks, stars, and last push.  Built using the github api, D3, and coffeescript. 
 
-:imports:
-  <link rel="stylesheet" type="text/css" href="/static/style/github_forks.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/static/scripts/github_forks.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+:css_imports:
+  /static/style/github_forks.css
 
-:styles:
+:js_imports:
+  //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+  //cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js
+  /static/scripts/github_forks.js
+
 :body:
   <div id="search">
     <input type="text" value="e.g. jquery/jquery" id="repo_name">

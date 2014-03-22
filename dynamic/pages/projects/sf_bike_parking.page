@@ -9,12 +9,14 @@
 :description:
   Find a parking spot for your bike in San Francisco
 
-:imports:
-  <link rel="stylesheet" type="text/css" href="/static/style/sf_bike_parking.css">
-  <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-  <script src="/static/scripts/sf_bike_parking.js"></script>
+:css_imports:
+  /static/style/sf_bike_parking.css
+
+:js_imports:
+  //maps.googleapis.com/maps/api/js?v=3.exp&sensor=false
+  //ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
+  //cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js
+  /static/scripts/sf_bike_parking.js
 
 :body:
   <div id="popup-template">
