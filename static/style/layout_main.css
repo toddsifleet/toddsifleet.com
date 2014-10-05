@@ -53,6 +53,14 @@ body {
   overflow: hidden;
   width: 100%;
 }
+#nav-contact-icons img {
+  height: 30px;
+  width: auto;
+  opacity: .5;
+}
+#nav-contact-icons img:hover {
+  opacity: 1;
+}
 #navigation {
   border-right: 1px solid #bccedd;
   width: 480px;

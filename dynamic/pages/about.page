@@ -33,10 +33,18 @@
       I have a BS degree in mechanical engineering with a minor in math from <a href="http://www.union.edu"  target="_blank">Union College</a> and an MS from the <a href="http://www.gatech.edu">Georgia Institute of Technology</a>, at GT I focused on the design and fabrication of mechatronic (mechanical, electrical, and software) systems.
     </p>
     <p>
-        Since finishing school I have been working as a software developer building online applications.  Initially working at <a href = "//athenahealth.com">athenahealth</a> in Boston as a software developer, solving some really challenging problems related to healthcare technology.  Currently I work as a fullstack developer at <a href = "//sermo.com">sermo</a> which is helping to bring physicians together. 
-    </p>
-    <p>
-         Working at Athena I learned a lot about the challenges and requirements for successful data portability and integrity in the healthcare system.  At sermo I have been working on a large multi-app Rails codebase, we have been working on some challenging scaling and internationalization (i18n) issues.   
+        Since finishing school I have been working as a software developer, a quick summary of my job history:
+        <ul>
+          <li>
+            <a href = "//athenahealth.com">athenahealth</a> a cloud based EMR; I worked on data interoperability, working mostly with perl and JS.
+          </li>
+          <li>
+            <a href = "//sermo.com">sermo</a> an online community for doctors; I worked as a fullstack Rails developer. 
+          </li>
+          <li>
+            I currently work at <a href = "//uber.com">uber</a> as a tech lead.  We are building some really cool realtime systems.
+          </li>
+        </ul>
     </p>
 
     <span class = "pull-right">-Todd Sifleet</span>

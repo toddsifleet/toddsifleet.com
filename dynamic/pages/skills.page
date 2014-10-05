@@ -3,7 +3,6 @@
 :home_page: True
 :order: 3
 :heading: skills
-:published: 1
 
 :meta-description:
     A summary of my programming abilities, including: python, django, javascript, css, html, arduino, and C.
@@ -26,7 +25,7 @@
         font-size: .8em;
     }
 
-    .expert {
+    .strong {
         color: green;
     }
 
@@ -34,7 +33,7 @@
         color: black;
     }
 
-    .familiar {
+    .familiar, .rusty{
         color: orange;
     }
 
@@ -44,35 +43,35 @@
 :content:
     <h2>Languages</h2>
     <a name="python"></a>
-    <h4 class = "skill">python:<span class = "expert pull-right">EXPERT</span></h4>
+    <h4 class = "skill">python:<span class = "strong pull-right">STRONG</span></h4>
     <p>
         I have been writing python since 2007 including web sites, number crunching, command line utilities, machine learning.  Python is my favorite language to work in, I love it!
     </p>
 
-    <a name="perl"></a>
-    <h4 class = "skill">perl: <span class = "expert pull-right">EXPERT</span></h4>
-    <p>
-        I write a lot of perl code day to day.  Perl is my favorite language for anything text processing or quick sys-admin like scripts.  Currently I have been using Moose to bring some sanity to perl's object system. 
-    </p>
-
     <a name="ruby"></a>
-    <h4 class = "skill">ruby: <span class = "expert pull-right">EXPERT</span></h4>
+    <h4 class = "skill">ruby: <span class = "strong pull-right">STRONG</span></h4>
     <p>
         I have been programming Ruby/Rails since early 2013.  I really enjoy the style and speed of ruby development.  Rails in my opinion is the quickest way to build dynamic web applications.
     </p>
 
     <a name="javascript"></a>
-    <h4 class = "skill">javascript <span class = "proficient pull-right">PROFICIENT</span></h4>
+    <h4 class = "skill">javascript <span class = "strong pull-right">STRONG</span></h4>
     <p>
-        I am not as strong with javascript as the above languages, but I am always getting better.  When mixed with <a href = "http://jquery.com/">jQuery</a> I love the power that it offers in the browser.  I am looking forward to learning a JS framework like <a href = "http://documentcloud.github.com/backbone/">backbone.js</a> or <a href = "http://angularjs.org/">angular.js</a>
+        I currently use javascript both on the client and the server.  On the client I use <a href = "http://documentcloud.github.com/backbone/">backbone.js</a> to build dynamic one page applications.  On the server I use <a href="http://expressjs.com/">express</a>, at uber we use Node extensivley to build realtime services. 
     </p>    
 
     <a name="css-html"></a>
     <h4 class = "skill">css and html <span class = "proficient pull-right">PROFICIENT</span></h4>
     <p>
-        I am by no means a designer, but I am great at implementing effective web sites/interfaces.  For consitent and responsive designs I use <a href = "http://twitter.github.com/bootstrap/">Bootstrap</a>, I also use <a href = "http://lesscss.org/">less</a> to make my CSS <a href = "http://en.wikipedia.org/wiki/Don't_repeat_yourself">DRYER</a>.  I am awlays working on getting better as a designer.
+        I am by no means a designer, but I am great at implementing effective web sites/interfaces.  For consistent and responsive designs I use <a href = "http://twitter.github.com/bootstrap/">Bootstrap</a>, I also use <a href = "http://lesscss.org/">less</a> to make my CSS <a href = "http://en.wikipedia.org/wiki/Don't_repeat_yourself">DRYER</a>.  I am awlays working on getting better as a designer.
     </p>
     
+    <a name="perl"></a>
+    <h4 class = "skill">perl: <span class = "rusty pull-right">RUSTY</span></h4>
+    <p>
+      I used to write a lot of perl but have not been using it recently.  I now use python and ruby where I would have used perl previously.
+    </p>
+
     <a name="c"></a>
     <h4 class = "skill">C: <span class = "familiar pull-right">FAMILIAR</span></h4>
     <p>
