@@ -9,13 +9,10 @@
 :description:
     A bubble chart of all forks of a github repo, showing: forks, stars, and last push.  Built using the github api, D3, and coffeescript. 
 
-:imports:
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/scripts/brainfuck.js"></script>
+:js_imports:
+    //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+    /static/scripts/brainfuck.js
 
-:styles:
-
-:scripts:
 
 foobar = function () {
     bf = new BrainFuck()

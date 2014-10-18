@@ -53,6 +53,14 @@ body {
   overflow: hidden;
   width: 100%;
 }
+#nav-contact-icons img {
+  height: 30px;
+  width: auto;
+  opacity: .5;
+}
+#nav-contact-icons img:hover {
+  opacity: 1;
+}
 #navigation {
   border-right: 1px solid #bccedd;
   width: 480px;
@@ -97,6 +105,10 @@ body {
 #navigation a {
   color: #bccedd;
   text-decoration: none;
+  -moz-transition: color .25s;
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
 }
 #navigation:hover a {
   color: #205c90;
@@ -294,4 +306,7 @@ strong {
   clear: both;
   width: 100%;
   height: 20px;
+}
+.link-bar {
+  padding: 10px 0;
 }

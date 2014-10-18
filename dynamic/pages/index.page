@@ -59,22 +59,16 @@
         <strong>Todd Sifleet</strong> a fullstack developer specializing in python, ruby and web development.  I  work with a myriad of technologies to solve challenging business problems.
     </div>
     
-    <h2><a href = "/skills">skills</a>:</h2>
+    <h2>skills:</h2>
     <div class = "home_box skills">
-        python, perl, ruby, rails, javascript, coffee script, css, less, html, json/xml and SQL
+        python, ruby, javascript, flask, node, rails, redis, kafka, distributed systems, scalability
     </div>
 
-    <h2><a href = "/projects">projects</a>:</h2> 
+    <h2>projects:</h2>
     <div class = "project">
         <h3><a href="https://github.com/toddsifleet/staticpy">Static Py</a></h3>
         <p>
-            
-            <ul>
-                <li>A fully custamizable static website generator, this generator imposes very few restrictions, allowing you to fully customize your site.</li>
-                <li>Uses the <a href="http://jinja.pocoo.org/">jinja</a> templating engine.</li>
-                <li>Built in dev server, which auto refreshes pages on changes, no need to refresh to see changes.</li>
-                <li>Built in S3 support, when you are done working on your site you can automatically upload it to one of your buckets.</li>
-            </ul>
+            A fully custamizable static website generator, Static Py does not limit the structure of your site.  Static Py has a built in dev server that monitors changes and refreshes pages on change.  With built in S3 support it is easy to upload your site to one of you buckets.
         </p>
     </div>
     <div class = "project">
@@ -84,9 +78,9 @@
         </p>  
     </div>
     <div class = "project">
-        <h3><a href="https://github.com/toddsifleet/sublime_open">Sublime Text Plugin</a></h3>
+        <h3><a href="https://github.com/toddsifleet/retrypy">RetryPy</a></h3>
         <p>
-            This is a plugin that makes navigating your files a breeze within <a href = "http://www.sublimetext.com">Sublime Text</a>.  It tracks recent files, favorite files/places allows you to navigate the file tree right from the keyboard.  Tracks different projects, so if you switch between branches/projects it is easy to keep things separate.
+          A python module to automatically retry functions if they raise an exceptions.  RetryPy offers three different interfaces: a decorator, a wrapper, and a direct call method.  RetryPy offers intelligent logic to determent what exceptions should be retried.
         </p>
     </div>
 
