@@ -4,6 +4,7 @@
 :home-page: True
 :order: 2
 :published: 1
+:child-template: project_base.html
 
 :meta-description:
     A summary of some of the projects I have worked on: tabswithme, naive bayes classifier, project euler, and automatic bike transmission.

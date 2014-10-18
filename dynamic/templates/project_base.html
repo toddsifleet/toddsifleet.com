@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    {{ page.content | safe}}
+    {% if page.prev or page.next %}
+      <div class="link-bar">
+        {% if page.prev %}
+          <a class = "pull-left" href="{{page.prev.slug}}">Previous Project</a>
+        {% endif %}
+        {% if page.next %}
+          <a class = "pull-right" href="{{page.next.slug}}">Next Project</a>
+        {% endif %}
+      </div>
+    {% endif %}
+{% endblock %}
