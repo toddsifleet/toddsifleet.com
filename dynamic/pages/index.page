@@ -61,7 +61,7 @@
     
     <h2><a href = "/skills">skills</a>:</h2>
     <div class = "home_box skills">
-        python, perl, ruby, rails, javascript, coffee script, css, less, html, json/xml and SQL
+        python, ruby, javascript, flask, node, rails, redis, kafka, distributed systems, scalability
     </div>
 
     <h2><a href = "/projects">projects</a>:</h2> 
