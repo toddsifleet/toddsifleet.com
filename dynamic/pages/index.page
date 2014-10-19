@@ -63,27 +63,3 @@
     <div class = "home_box skills">
         python, ruby, javascript, flask, node, rails, redis, kafka, distributed systems, scalability
     </div>
-
-    <h2>projects:</h2>
-    <div class = "project">
-        <h3><a href="https://github.com/toddsifleet/staticpy">Static Py</a></h3>
-        <p>
-            A fully custamizable static website generator, Static Py does not limit the structure of your site.  Static Py has a built in dev server that monitors changes and refreshes pages on change.  With built in S3 support it is easy to upload your site to one of you buckets.
-        </p>
-    </div>
-    <div class = "project">
-        <h3><a href="http://www.tabswithme.com">Tabs With Me</a></h3>
-        <p> 
-            This is a website that I built to my roommates and I share our bills.  Whenever we pay a bill or pay a roommate we track it here, it is very clear who owes what.  I built this with python, django, appengine and bootstrap.
-        </p>  
-    </div>
-    <div class = "project">
-        <h3><a href="https://github.com/toddsifleet/retrypy">RetryPy</a></h3>
-        <p>
-          A python module to automatically retry functions if they raise an exceptions.  RetryPy offers three different interfaces: a decorator, a wrapper, and a direct call method.  RetryPy offers intelligent logic to determent what exceptions should be retried.
-        </p>
-    </div>
-
-    <div class = "clear" style = "text-align: right; height: 50px;">
-        <a href = "/projects">More Projects</a>
-    </div>

@@ -3,4 +3,16 @@
 {% endblock %}
 {% block content %}
     {{ page.content|safe }}
+    <h2>projects:</h2>
+    {% for project in category.projects.children[0:3] %}
+      <div class = "project">
+        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        <p>
+          {{ project.description }}
+        </p>
+      </div>
+    {% endfor %}
+    <div class = "clear" style = "text-align: right; height: 50px;">
+        <a href = "/projects">More Projects</a>
+    </div>
 {% endblock %}

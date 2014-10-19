@@ -19,7 +19,7 @@
                     {% if link.url == page.url %}
                         <li class = "hide-on-phone">{{ link.title }}</li>
                     {% else %}
-                        <a href="/{{ link.url }}">
+                        <a href="{{ link.url }}">
                             <li>{{ link.title }}</li>
                         </a>
                     {% endif %}

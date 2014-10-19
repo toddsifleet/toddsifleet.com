@@ -1,0 +1,8 @@
+:title: staticpy
+:no-render: True
+:url: https://github.com/toddsifleet/staticpy
+:order: 1
+:published: 1
+
+:description:
+  A fully custamizable static website generator, Static Py does not limit the structure of your site.  Static Py has a built in dev server that monitors changes and refreshes pages on change.  With built in S3 support it is easy to upload your site to one of your buckets.

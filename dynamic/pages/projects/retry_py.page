@@ -1,0 +1,8 @@
+:title: retrypy
+:no-render: True
+:url: https://github.com/toddsifleet/retrypy
+:order: 3
+:published: 1
+
+:description:
+  A python module to automatically retry functions if they raise an exceptions.  RetryPy offers three different interfaces: a decorator, a wrapper, and a direct call method.  RetryPy offers intelligent logic to determent what exceptions should be retried.
