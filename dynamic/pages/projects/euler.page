@@ -45,7 +45,7 @@ h5 {
 
 :content:
     <p>
-        When I was learning python I spent some time solving the <a href="http://projecteuler.net/">project euler</a> problems.  This is the code for all of the problems I made it through. Some of them may be pretty ugly, I was just learning.  I created a <a href="/static/code/euler_utils.py">euler_utils.py</a> file to contain some functions I reused.
+        When I was learning python I spent some time solving the <a href="http://projecteuler.net/">project euler</a> problems.  This is the code for all of the problems I made it through. Some of them may be pretty ugly, I was just learning.  I created a <a href="https://github.com/toddsifleet/project_euler/blob/master/EulerUtils.py">euler_utils.py</a> file to contain some functions I reused.
     </p>
 
     <h5><a href="http://projecteuler.net/index.php?section=problems&id=1"  target="_blank">problem 1</a>:<span style="float:right">[<a href="#" onClick="return toggle(1)">solution</a> | answer: 233168 | time: 0.0880 ms]</span></h5>
