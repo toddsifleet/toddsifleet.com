@@ -15,6 +15,12 @@
         border-bottom: 1px dotted #aaa;
     }
 
+:js-imports:
+  /static/scripts/prism.js
+
+:css-imports:
+  /static/style/prism.css
+
 :content:
     <h3>What is a Naive Bayes Classifier?</h3>
     <p>
@@ -53,11 +59,10 @@
             <li>Update the category specific count for each word that appeared in the document. e.g. spam[viagra] = 20</li>
             <li>Update how many words we have counted for the given category.</li>
         </ul>
-    <pre class = "code">
-for data, category in docs:
-  words = self.get_words(data)
-  self.categories[category].update(words)
-  self.word_count[category] += sum(words.values())</pre>
+    <pre class="language-python"><code class = "language-python">for data, category in docs:
+    words = self.get_words(data)
+    self.categories[category].update(words)
+    self.word_count[category] += sum(words.values())</code></pre>
 
   <h4>Classifying</h4>
     <ul>
@@ -70,8 +75,7 @@ for data, category in docs:
         <li>Loop through each category and add log(word_count[category]/word_count[total]), to each each categories score.</li>
         <li>Return the category with the highest score</li>
     </ul>
-    <pre class = "code">
-words = self.get_words(string) #a counter of the words in the string
+    <pre class="language-python"><code class = "language-python">words = self.get_words(string) #a counter of the words in the string
 score = defaultdict(float) #score for each category
 
 for word in words:
@@ -89,10 +93,10 @@ for category in self.word_count:
 if score:
   return max(score, key = lambda x: score[x])
 
-return None</pre>
+return None</pre></code>
 
 <h4>Usage</h4>
-<pre class = "code">import bayes
+<pre class="language-python"><code class = "language-python">import bayes
 classifier = bayes.Classifier()
 
 data = [
@@ -108,7 +112,7 @@ classifier.train(data)
 #you can save the data for later
 classifier.save('demo.bayes')
 
-print classifier.classify('this is a test string')</pre>
+print classifier.classify('this is a test string')</code></pre>
 
 <strong style = "float: right"><a href = "https://github.com/toddsifleet/bayes_classifier">full source on github</a></strong>
 <div class = "clear"></div>
