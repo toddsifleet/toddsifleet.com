@@ -1,10 +1,11 @@
 :html-title: Projects -- Todd Sifleet
-:title: projects 
+:title: projects
 :heading: projects
 :home-page: True
 :order: 2
 :published: 1
 :child-template: project_base.html
+:items-per-page: 5
 
 :meta-description:
     A summary of some of the projects I have worked on: tabswithme, naive bayes classifier, project euler, and automatic bike transmission.
@@ -13,7 +14,7 @@
     python, arduino, javascript, software, css, html
 :styles:
     .entry-title {
-        margin:0px; 
+        margin:0px;
         padding:0px;
         border-bottom: 1px dotted #aaa;
     }

@@ -5,7 +5,7 @@
             {{ page.content }}
         </div>
     {% endif %}
-    {% for page in children %}
+    {% for page in category.children %}
         <div class = "entry">
             <h2 class = "entry-title">
                 <a href = "{{ page.url }}">{{ page.title }}</a>
