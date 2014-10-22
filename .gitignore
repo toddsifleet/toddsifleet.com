@@ -3,3 +3,4 @@
 settings.py
 *.swp
 .output/*
+static/sitemap.xml
