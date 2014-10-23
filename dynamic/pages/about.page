@@ -2,7 +2,7 @@
 :title: about
 :heading: about me
 :home_page: True
-:order: 4
+:order: 3
 :slug: about
 :published: 1
 
@@ -10,7 +10,7 @@
     I am Todd Sifleet, I went to Union College in upstate NY and graduate school at Georgia Tech in Atlanta. I enjoy solving challenging problems by utilizing bleeding edge technology and software solutions.
 
 :meta-keywords:
-    software, engineer, python, javascript, css, html, arduino, appengine, django
+    software, engineer, python, javascript, css, html, appengine, flask
 
 :styles:
     .portrait {
