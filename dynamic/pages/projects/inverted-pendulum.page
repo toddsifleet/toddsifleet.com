@@ -14,10 +14,10 @@
 
 :content:
 <p>  
-	This is a video of a simulation I made with python and matplotlib.  It is the standard <a href="http://en.wikipedia.org/wiki/Inverted_pendulum">Inverted Pendulum</a> control problem, I implemented a <a href="http://en.wikipedia.org/wiki/Linear-quadratic_regulator">LQR Controller</a> in <a href="http://sourceforge.net/apps/mediawiki/python-control/index.php?title=Main_Page">python-control</a> for stabilization.  To bring the pendulum from the down position to upright, I used an energy based controller.  
+	This is a video of a simulation I made with python and matplotlib.  It is the standard <a href="http://en.wikipedia.org/wiki/Inverted_pendulum">Inverted Pendulum</a> control problem, I implemented an <a href="http://en.wikipedia.org/wiki/Linear-quadratic_regulator">LQR Controller</a> in <a href="http://sourceforge.net/apps/mediawiki/python-control/index.php?title=Main_Page">python-control</a> for stabilization.  To bring the pendulum from the down position to upright, I used an energy based controller.  <a href="http://www.github.com/toddsifleet/inverted_pendulum">Source Code</a>
 </p>
 <center>
   <video width="640" height="480" controls>
-    <source src="/static/videos/inverted_pendulum.ogg" type="video/mp4">
+    <source src="/static/videos/inverted_pendulum.mp4" type="video/mp4">
   </video>
 </center>
