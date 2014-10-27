@@ -5,4 +5,82 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <url>
+    <loc>//about</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/github-forks</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/global-design</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/bayes</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/sf-bike-parking</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/inverted-pendulum</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/brainfuck</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/bike-shifter</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/euler</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/1</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>//projects/2</loc>
+    
+    <changefreq>weekly</changefreq>
+  </url>
+
 </urlset>
