@@ -1,7 +1,7 @@
 :html-title: Projects -- Todd Sifleet
 :title: projects
 :heading: projects
-:home-page: True
+:include_in_navigation: True
 :order: 2
 :published: 1
 :child-template: project_base.html

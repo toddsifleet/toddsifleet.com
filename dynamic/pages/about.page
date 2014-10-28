@@ -1,7 +1,7 @@
 :html-title: About Me -- Todd Sifleet
 :title: about
 :heading: about me
-:home_page: True
+:include_in_navigation: True
 :order: 3
 :slug: about
 :published: 1

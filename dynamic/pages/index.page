@@ -1,7 +1,7 @@
 :html-title: Todd Sifleet -- Software Developer | Python, app engine, javascript
 :heading: Todd Sifleet
 :title: home
-:home_page: True
+:include_in_navigation: True
 :template: index.html
 :order: 1
 :published: 1
