@@ -9,18 +9,18 @@
 {% block body %}
     <div class="container">
         <div id = "navigation">
-            <a href = "#" onClick = "show_navigation(); return false;">
+            <a href = "#" onClick = "navController.showNavigation(); return false;">
                 <div id = "mobile-nav-button">
                     + {{ page.title }} +
                 </div>
             </a>
-            <ul id = "nav-menu">
+            <ul data-page-title="{{ page.title  }}" id = "nav-menu">
                 {% for link in navigation_links %}
                     {% if link.url == page.url %}
                         <li class = "hide-on-phone">{{ link.title }}</li>
                     {% else %}
                         <a href="{{ link.url }}">
-                            <li>{{ link.title }}</li>
+                          <li>{{ link.title }}</li>
                         </a>
                     {% endif %}
                 {% endfor %}
@@ -57,21 +57,4 @@
     <div class = "footer">
         &copy; 2013 <a href = "#">Todd Sifleet<a/> | generated with <a href = "//github.com/toddsifleet/staticpy">Static Py</a>
     </div>
-
-    <script>
-      function show_navigation() {
-        var title = "{{ page.title }}";
-        var navigation = document.getElementById("nav-menu");
-        var navigation_button = document.getElementById("mobile-nav-button");
-        var height = navigation.style.getPropertyValue('max-height');
-        if (height == '0px' || height == null) {
-          navigation.style.setProperty('max-height', {{navigation_links|length}} * 70 + 'px');
-          navigation_button.innerHTML = "- " + title + " -";
-        }
-        else {
-          navigation.style.setProperty('max-height', '0px');
-          navigation_button.innerHTML = "+ " + title + " +";
-        }
-      }
-    </script>
 {% endblock %}
