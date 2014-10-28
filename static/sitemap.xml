@@ -6,79 +6,61 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>//about</loc>
+    <loc>http://www.toddsifleet.com//about</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//</loc>
+    <loc>http://www.toddsifleet.com//</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//projects/github-forks</loc>
+    <loc>http://www.toddsifleet.com//projects/github-forks</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//projects/global-design</loc>
+    <loc>http://www.toddsifleet.com//projects/global-design</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//projects/bayes</loc>
+    <loc>http://www.toddsifleet.com//projects/bayes</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//projects/sf-bike-parking</loc>
+    <loc>http://www.toddsifleet.com//projects/inverted-pendulum</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//projects/inverted-pendulum</loc>
+    <loc>http://www.toddsifleet.com//projects/bike-shifter</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//projects/brainfuck</loc>
+    <loc>http://www.toddsifleet.com//projects/euler</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//projects/bike-shifter</loc>
+    <loc>http://www.toddsifleet.com//projects</loc>
     
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>//projects/euler</loc>
-    
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>//projects</loc>
-    
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>//projects/1</loc>
-    
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>//projects/2</loc>
+    <loc>http://www.toddsifleet.com//projects/1</loc>
     
     <changefreq>weekly</changefreq>
   </url>
