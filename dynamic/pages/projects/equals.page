@@ -1,0 +1,7 @@
+:title: equals
+:url: https://github.com/toddsifleet/equals
+:order: 3
+:published: 1
+
+:description:
+    A Python package I built that provides equality objects for testing with doubles or mock. There are times where we don't want to assert absolute equality, e.g. we need to ensure two lists have the same elements, but don't care about order.
