@@ -77,15 +77,13 @@ body {
 }
 #navigation #mobile-nav-button {
   display: none;
-  text-align: center;
+  text-align: left;
   margin: -5px;
+  padding-left: 25px;
   margin-bottom: 0px;
   width: fill;
   background-color: #205c90;
   color: #bccedd;
-}
-#navigation #mobile-nav-button:hover {
-  color: white;
 }
 #navigation ul {
   float: right;
@@ -309,4 +307,23 @@ strong {
 }
 .link-bar {
   padding: 10px 0;
+}
+.hamburger {
+  position: relative;
+  padding-right: 75px;
+  margin-top: 15px;
+  float: right;
+}
+.hamburger:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 55px;
+  height: 8px;
+  background-color: #bccedd;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0 15px 0 0 #bccedd, 0 30px 0 0 #bccedd;
 }

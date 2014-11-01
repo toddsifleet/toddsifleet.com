@@ -8,10 +8,11 @@
 
 {% block body %}
     <div class="container">
-        <div id = "navigation">
+        <div id = "navigation" >
             <a href = "#" onClick = "navController.showNavigation(); return false;">
                 <div id = "mobile-nav-button">
-                    + {{ page.title }} +
+                    {{ page.title }}
+                    <span class="hamburger"></span>
                 </div>
             </a>
             <ul data-page-title="{{ page.title  }}" id = "nav-menu">
