@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 {% for page in pages %}
   <url>
-    <loc>{{base_url}}{%if page.url %}/{% endif %}{{ page.url }}</loc>
+    <loc>{{base_url}}{{ page.url }}</loc>
     {% if page.last_modified %}
       <lastmod>{{page.last_modified.isoformat()}}</lastmod>
     {% endif %}
