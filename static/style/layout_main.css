@@ -97,10 +97,6 @@ body {
 #navigation li {
   line-height: 54px;
 }
-#navigation .footer {
-  float: right;
-  padding-right: 50px;
-}
 #navigation a {
   color: #bccedd;
   text-decoration: none;
@@ -129,10 +125,10 @@ body {
   max-width: 600px;
 }
 .footer {
-  margin: 0px;
   margin-left: 480px;
   margin-top: -30px;
-  max-width: 600px;
+  padding-right: 15px;
+  max-width: 100%;
   text-align: right;
 }
 .content {
@@ -224,10 +220,6 @@ strong {
     margin-left: 300px;
     max-width: 600px;
   }
-  .footer {
-    margin-left: 300px;
-    max-width: 600px;
-  }
 }
 @media only screen and (max-width: 880px), only screen and (max-device-width: 880px) {
   .hide-on-phone {
@@ -242,8 +234,6 @@ strong {
     font-size: 24px;
   }
   .footer {
-    text-align: center;
-    margin: 0px;
     margin-left: 0px;
     margin-top: -35px;
     width: 100%;
