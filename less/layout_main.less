@@ -113,6 +113,7 @@ body {
     font-size: 46px;
 
     #mobile-nav-button {
+        font-size: 1.5em;
         display: none;
         text-align: left;
         margin: -5px;
@@ -332,6 +333,7 @@ strong {
 
         #mobile-nav-button {
             display: block;
+            height: 1.6em;
         }
 
         li {
@@ -384,8 +386,7 @@ strong {
 
 .hamburger {
     position: relative;
-    padding-right: 75px;
-    margin-top: 15px;
+    padding-right: 85px;
     float: right;
 }
 
@@ -393,13 +394,18 @@ strong {
     content: "";
     position: absolute;
     left: 0;
-    top: 5px;
+    top: .4em;
     width: 55px;
-    height: 8px;
+    height: .15em;
     background-color: @light_blue;
 
-    .round_corners(4px);
+    .round_corners(.075em);
     box-shadow:
-        0 15px 0 0 @light_blue,
-        0 30px 0 0 @light_blue;
+        0 .3em 0 0 @light_blue,
+        0 .6em 0 0 @light_blue;
+}
+
+.hamburger-text {
+    position: relative;
+    top: -.15em;
 }

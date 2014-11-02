@@ -76,6 +76,7 @@ body {
   font-size: 46px;
 }
 #navigation #mobile-nav-button {
+  font-size: 1.5em;
   display: none;
   text-align: left;
   margin: -5px;
@@ -269,6 +270,7 @@ strong {
   }
   #navigation #mobile-nav-button {
     display: block;
+    height: 1.6em;
   }
   #navigation li {
     text-align: center;
@@ -310,20 +312,23 @@ strong {
 }
 .hamburger {
   position: relative;
-  padding-right: 75px;
-  margin-top: 15px;
+  padding-right: 85px;
   float: right;
 }
 .hamburger:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 5px;
+  top: .4em;
   width: 55px;
-  height: 8px;
+  height: .15em;
   background-color: #bccedd;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  box-shadow: 0 15px 0 0 #bccedd, 0 30px 0 0 #bccedd;
+  border-radius: 0.075em;
+  -moz-border-radius: 0.075em;
+  -webkit-border-radius: 0.075em;
+  box-shadow: 0 0.3em 0 0 #bccedd, 0 0.6em 0 0 #bccedd;
+}
+.hamburger-text {
+  position: relative;
+  top: -0.15em;
 }
