@@ -9,11 +9,11 @@
 :meta-keywords:
 python, project euler, math, programming puzzles
 
-:js_imports:
+:js_imports[list]:
     //ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
     /static/scripts/prism.js
 
-:css-imports:
+:css-imports[list]:
   /static/style/prism.css
 
 :scripts:

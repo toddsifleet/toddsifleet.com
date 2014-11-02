@@ -9,7 +9,7 @@
 :description:
     A bubble chart of all forks of a github repo, showing: forks, stars, and last push.  Built using the github api, D3, and coffeescript. 
 
-:js_imports:
+:js_imports[list]:
     //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
     /static/scripts/brainfuck.js
 

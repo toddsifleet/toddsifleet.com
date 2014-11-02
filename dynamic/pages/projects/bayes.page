@@ -15,10 +15,10 @@
         border-bottom: 1px dotted #aaa;
     }
 
-:js-imports:
+:js-imports[list]:
   /static/scripts/prism.js
 
-:css-imports:
+:css-imports[list]:
   /static/style/prism.css
 
 :content:

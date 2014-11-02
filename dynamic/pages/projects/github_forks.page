@@ -9,10 +9,10 @@
 :description:
   A bubble chart of all forks of a github repo, showing: forks, stars, and last push.  Built using the github api, D3, and coffeescript. 
 
-:css_imports:
+:css_imports[list]:
   /static/style/github_forks.css
 
-:js_imports:
+:js_imports[list]:
   //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
   //cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js
   /static/scripts/github_forks.js
@@ -43,5 +43,5 @@
     </center>
   </div>
   <div id="footer">
-    &copy; 2013 <a href="http://www.toddsifleet.com"> Todd Sifleet<a/> | generated with <a href="//github.com/toddsifleet/staticpy" style="margin-right: 25px">Static Py</a>
+    &copy; 2013 <a href="http://www.toddsifleet.com"> Todd Sifleet<a/> 
   </div>
