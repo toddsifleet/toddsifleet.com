@@ -7,7 +7,7 @@
 :published: 1
 
 :meta-description:
-    Todd Sifleet, a fullstack python developer.  I enjoy using technology to solve challenging business problems.
+    Todd Sifleet, a ullstack python developer.  I enjoy using technology to solve challenging business problems.
 
 :meta-keywords:
     software, engineer, python, javascript, css, html, ruby, ruby on rails, appengine, tabswithme
@@ -20,15 +20,15 @@
         float: left;
     }
 
-    .skills {
+    .technologies {
         float: left;
         text-align: center;
         margin-bottom: 25px;
     }
 
     h2 {
-        margin:0px; 
-        padding:0px; 
+        margin:0px;
+        padding:0px;
         border-bottom: 1px solid #aaa;
         width: 100%;
     }
@@ -55,11 +55,12 @@
         color: #bccedd;
     }
 :content:
-    <div class="home_box" id = "hero"> 
-        <strong>Todd Sifleet</strong> a fullstack developer specializing in python, ruby and web development.  I  work with a myriad of technologies to solve challenging business problems.
+    <div class="home_box" id = "hero">
+        <strong>Todd Sifleet</strong> a technical leader with a proven track record of building and leading teams that deliver on time.
     </div>
-    
+
+
     <h2>skills:</h2>
-    <div class = "home_box skills">
-        python, ruby, javascript, flask, node, rails, redis, kafka, distributed systems, scalability
+    <div class = "home_box technologies">
+        python, golang, RDBMS, distributed systems, mentorship
     </div>
