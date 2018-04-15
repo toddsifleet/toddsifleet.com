@@ -1,0 +1,7 @@
+:title: doubles
+:url: https://github.com/uber/doubles
+:order: 1
+:published: 1
+
+:description:
+  A Python package I maintain that provides test doubles for use in automated tests. It provides functionality for stubbing, mocking, and verification of test doubles against the real objects they double.
