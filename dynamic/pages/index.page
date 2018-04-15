@@ -7,10 +7,10 @@
 :published: 1
 
 :meta-description:
-    Todd Sifleet, a ullstack python developer.  I enjoy using technology to solve challenging business problems.
+    Todd Sifleet -- a technical leader with a track record of building and leading teams that deliver on time.
 
 :meta-keywords:
-    software, engineer, python, javascript, css, html, ruby, ruby on rails, appengine, tabswithme
+    python, golang, distributed systems, leadership, mentorship
 
 :styles:
     #hero {
@@ -56,11 +56,11 @@
     }
 :content:
     <div class="home_box" id = "hero">
-        <strong>Todd Sifleet</strong> a technical leader with a proven track record of building and leading teams that deliver on time.
+        <strong>Todd Sifleet </strong> -- a technical leader with a track record of building and leading teams that deliver on time.
     </div>
 
 
     <h2>skills:</h2>
     <div class = "home_box technologies">
-        python, golang, RDBMS, distributed systems, mentorship
+        python, golang, distributed systems, leadership, mentorship
     </div>
