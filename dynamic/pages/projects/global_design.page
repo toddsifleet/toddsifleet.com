@@ -1,13 +1,13 @@
 :html-title:  Task Allocation and Coordination in a Distributed Environment | Todd Sifleet
 :title: global design
 :heading: global design
-:order: 8
+:order: 9
 :published: 1
 
-:meta-description: 
+:meta-description:
     A Computational Method for Task Allocation and Coordination in a Distributed Design Environment
 
-:description: 
+:description:
     This is a series of papers on a computational method for task allocation and coordination in a distributed design environment.  I worked with Jay Johnson and Hao Wu at GT over the course of a semester and a half on this work, and getting the final one published.  We built off of the <a href="http://www.enge.vt.edu/terpenny/Smart/Virtual_econ/Module2/pahl_and_beitz_method.htm">Pahl and Beitz Method</a> updated for a distributed design environment and added a computational method for task allocation.
 
 :styles:
@@ -32,7 +32,7 @@
 	I worked with Jay Johnson and Hao Wu at GT over the course of a semester and a half on this work, and finally getting it published.  We built off of the <a href="http://www.amazon.com/Engineering-Design-A-Systematic-Approach/dp/3540199179/ref=sr_1_1?ie=UTF8&qid=1360112392&sr=8-1&keywords=pahl+and+beitz">Pahl and Beitz Method</a> updated it for a distributed design environment and added a computational method for task allocation.
 </p>
 
-<p> 
+<p>
 	This work began as a semester long project in ME6101 around the Pahl and Beitz method, we decided to focus on the challenges of the new "flat-world" we live in.  In the future design teams will be spread across the globe, it will be important to effectively allocate work, and coordinate communication between these designers. See our executive summary below
 	</p>
 
@@ -48,7 +48,7 @@
 	To complete these steps, we use three computational tools to model the design and the designers. First, we use the Design Structure Matrix (DSM) to identify the interdependence among design tasks. Second, we use a genetic algorithm (GA) to divide workforce into teams for the tasks. Finally, we use agent-based modeling (ABM) to find out the best coordination strategy. The modeling approaches involving the DSM, GA and ABM are introduced and verified with test cases.
 </p>
 <p>
-	Finally, we begin the validation of our augmented method by going through the Validation Square process. We argue the theoretical structural validity of the method by demonstrating the information flow within the augmented and personalized method is consistent. Then to show the empirical validation by selecting a complex design project. We look at the design of a hybrid vehicle to illustrate that the method gives good results and to begin the empirical performance validity of some of the components of the new design method. With additional examples and meaningful results, the theoretical performance validity of this method can also be expected. 
+	Finally, we begin the validation of our augmented method by going through the Validation Square process. We argue the theoretical structural validity of the method by demonstrating the information flow within the augmented and personalized method is consistent. Then to show the empirical validation by selecting a complex design project. We look at the design of a hybrid vehicle to illustrate that the method gives good results and to begin the empirical performance validity of some of the components of the new design method. With additional examples and meaningful results, the theoretical performance validity of this method can also be expected.
 </p>
 </blockquote>
 <a href="/static/computational_method_distributed_design.pdf" class = "source">Full Paper</a>
@@ -59,4 +59,5 @@
 Managing the product realization process is a difficult endeavor in today's global product development environment. Design project managers are required to form teams from geographically distributed designers as well as effectively manage the collaborative design process. In this paper, a computational method is proposed to aid design managers in allocating design tasks to geographically distributed designers and identify appropriate coordination mechanisms to manage the collaborative design process. The method involves three stages: i) arriving at an initial design task sequence using the design structure matrix through partitioning of design tasks into blocks of dependent, independent and interdependent tasks, ii) allocating of design tasks to design teams and the improvement of the design sequence accounting for the number of designers available and their competencies and iii) determination of design review meeting frequencies as a coordination mechanism for interdependent tasks using agent based modeling simulations.
 </blockquote>
 
-<a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=ASMECP002008043277000595000001&idtype=cvips&gifs=yes&ref=no" class = "source">ASME</a>
+<a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1628047" class = "source">ASME</a>
+<div class="clear"></div>

@@ -1,5 +1,8 @@
 var navController = (function() {
   var navigation = document.getElementById("nav-menu");
+  if (!navigation) {
+    return;
+  }
   var navigation_button = document.getElementById("mobile-nav-button");
   var nav_link_count = navigation.querySelectorAll('li').length;
 
